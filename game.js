@@ -14,10 +14,49 @@ const gameState = {
     totalQuestions: 0,
     currentQuestionIndex: 0,
     correctAnswers: 0,
+    firstTryCorrect: 0, // Track first-try correct answers
+    wrongAttempts: 0, // Track total wrong attempts
+    currentQuestionAttempts: 0, // Wrong attempts on current question
     currentAct: 1,
     questions: [],
     storyIntroIndex: 0,
-    isAnswering: false
+    isAnswering: false,
+    storyBetweenQuestions: [] // Story segments to show between questions
+};
+
+// =====================================================
+// Story Content
+// =====================================================
+
+const storySegments = {
+    intro: [
+        "In the neon-lit kingdom of Trivia, darkness stirs...",
+        "A great shadow known as the Shadow of Ignorance has begun to consume the land.",
+        "Ancient knowledge fades. The light of wisdom grows dim.",
+        "But a prophecy speaks of a chosen hero who will rise...",
+        "One who can channel the power of Doctor Mays to vanquish the darkness.",
+        "That hero is YOU."
+    ],
+    act1: [
+        "You enter the Forgotten Library, its halls echoing with lost knowledge.",
+        "The tomes whisper secrets waiting to be rediscovered.",
+        "Your wisdom grows stronger with each truth you speak."
+    ],
+    act2: [
+        "The Echoing Caverns stretch before you, crystals pulsing with forgotten power.",
+        "Ancient riddles carved into the walls test your resolve.",
+        "The shadows retreat as your knowledge illuminates the path."
+    ],
+    act3: [
+        "The Shadow Citadel looms above, crackling with dark energy.",
+        "This is the final confrontation. The fate of Trivia hangs in the balance.",
+        "Only your wisdom can dispel the Shadow of Ignorance forever."
+    ],
+    victory: [
+        "The Shadow of Ignorance shatters into a thousand fading wisps!",
+        "Light returns to the kingdom of Trivia!",
+        "Doctor Mays' knowledge lives on through you, champion!"
+    ]
 };
 
 // =====================================================
@@ -59,7 +98,7 @@ const game = {
         document.querySelectorAll('.game-screen').forEach(screen => {
             screen.classList.remove('active');
         });
-        
+
         // Show target screen
         const targetScreen = document.getElementById(screenId);
         if (targetScreen) {
@@ -89,7 +128,7 @@ const game = {
     renderCharacterGrid() {
         const grid = document.getElementById('character-grid');
         const characters = gameState.config.characters;
-        
+
         grid.innerHTML = characters.map(char => `
             <div class="character-card" data-character-id="${char.id}" onclick="game.selectCharacter('${char.id}')">
                 <img class="character-portrait" src="${char.imagePath}" alt="${char.name}" 
@@ -108,7 +147,7 @@ const game = {
     selectCharacter(characterId) {
         // Update state
         gameState.selectedCharacter = gameState.config.characters.find(c => c.id === characterId);
-        
+
         // Update UI
         document.querySelectorAll('.character-card').forEach(card => {
             card.classList.remove('selected');
@@ -116,7 +155,7 @@ const game = {
                 card.classList.add('selected');
             }
         });
-        
+
         // Move to question count selection after brief delay
         setTimeout(() => {
             this.showQuestionCountSelect();
@@ -137,13 +176,13 @@ const game = {
     renderQuestionCountOptions() {
         const container = document.getElementById('question-count-options');
         const totalAvailable = this.getTotalAvailableQuestions();
-        
-        // Offer options: 5, 10, 15, 20, or max available
-        const options = [5, 10, 15, 20].filter(n => n <= totalAvailable);
+
+        // Offer options: 5, 10, 15, 20, 25, 30 or max available
+        const options = [5, 10, 15, 20, 25, 30].filter(n => n <= totalAvailable);
         if (totalAvailable > 0 && !options.includes(totalAvailable)) {
             options.push(totalAvailable);
         }
-        
+
         container.innerHTML = options.map(count => `
             <button class="count-btn" onclick="game.selectQuestionCount(${count})">${count}</button>
         `).join('');
@@ -174,8 +213,38 @@ const game = {
         gameState.questions = this.sampleQuestions(count);
         gameState.currentQuestionIndex = 0;
         gameState.correctAnswers = 0;
-        
-        this.startStoryIntro();
+        gameState.firstTryCorrect = 0;
+        gameState.wrongAttempts = 0;
+        gameState.currentQuestionAttempts = 0;
+
+        // Assign story segments between questions
+        this.assignStorySegments();
+
+        this.startDramaticIntro();
+    },
+
+    /**
+     * Assign story segments to appear between questions
+     */
+    assignStorySegments() {
+        gameState.storyBetweenQuestions = [];
+        const total = gameState.totalQuestions;
+
+        // Distribute story segments throughout the game
+        const act1Point = Math.floor(total * 0.25);
+        const act2Point = Math.floor(total * 0.50);
+        const act3Point = Math.floor(total * 0.75);
+
+        // Assign story at key points
+        if (act1Point > 0) {
+            gameState.storyBetweenQuestions[act1Point - 1] = storySegments.act1[0];
+        }
+        if (act2Point > 0) {
+            gameState.storyBetweenQuestions[act2Point - 1] = storySegments.act2[0];
+        }
+        if (act3Point > 0) {
+            gameState.storyBetweenQuestions[act3Point - 1] = storySegments.act3[0];
+        }
     },
 
     /**
@@ -186,7 +255,7 @@ const game = {
     sampleQuestions(count) {
         const categories = gameState.config.categories;
         const allQuestions = [];
-        
+
         // Collect all enabled, complete questions
         categories.forEach(category => {
             category.questions.forEach(q => {
@@ -199,7 +268,7 @@ const game = {
                 }
             });
         });
-        
+
         // Shuffle and take the requested count
         const shuffled = this.shuffleArray([...allQuestions]);
         return shuffled.slice(0, count);
@@ -219,38 +288,76 @@ const game = {
     },
 
     /**
-     * Start the story intro sequence
+     * Start the dramatic intro sequence with fade-in paragraphs
      */
-    startStoryIntro() {
+    startDramaticIntro() {
         gameState.storyIntroIndex = 0;
+
+        // Create dramatic intro screen
+        const storyScreen = document.getElementById('story-intro');
+        const storyText = document.getElementById('story-text');
+        const continueBtn = storyScreen.querySelector('.btn-neon');
+
+        // Make background fully black for dramatic effect
+        storyScreen.style.background = '#000';
+        storyText.style.opacity = '0';
+        continueBtn.style.display = 'none';
+
         this.showScreen('story-intro');
-        this.displayStoryParagraph();
+
+        // Start the dramatic fade-in sequence
+        this.playDramaticIntro();
     },
 
     /**
-     * Display current story intro paragraph
+     * Play dramatic intro with paragraphs fading in one by one
      */
-    displayStoryParagraph() {
+    playDramaticIntro() {
         const storyText = document.getElementById('story-text');
-        const intro = gameState.config.meta.storyIntro;
-        
+        const storyScreen = document.getElementById('story-intro');
+        const continueBtn = storyScreen.querySelector('.btn-neon');
+        const intro = storySegments.intro;
+
         if (gameState.storyIntroIndex < intro.length) {
-            storyText.textContent = intro[gameState.storyIntroIndex];
+            // Fade out current text
+            storyText.style.transition = 'opacity 0.5s ease';
+            storyText.style.opacity = '0';
+
+            setTimeout(() => {
+                // Update text
+                storyText.textContent = intro[gameState.storyIntroIndex];
+
+                // Fade in new text
+                storyText.style.opacity = '1';
+                gameState.storyIntroIndex++;
+
+                // Continue to next paragraph after delay
+                setTimeout(() => {
+                    this.playDramaticIntro();
+                }, 3000); // 3 seconds per paragraph
+            }, 500);
+        } else {
+            // Intro complete - show continue button and restore gradient
+            setTimeout(() => {
+                storyScreen.style.background = '';
+                continueBtn.style.display = '';
+                continueBtn.style.opacity = '0';
+                continueBtn.style.transition = 'opacity 0.5s ease';
+
+                setTimeout(() => {
+                    continueBtn.style.opacity = '1';
+                }, 100);
+            }, 500);
         }
     },
 
     /**
-     * Advance to next story paragraph or start questions
+     * Skip intro or continue after dramatic intro
      */
     advanceStory() {
-        gameState.storyIntroIndex++;
-        const intro = gameState.config.meta.storyIntro;
-        
-        if (gameState.storyIntroIndex < intro.length) {
-            this.displayStoryParagraph();
-        } else {
-            this.startQuestions();
-        }
+        const storyScreen = document.getElementById('story-intro');
+        storyScreen.style.background = '';
+        this.startQuestions();
     },
 
     /**
@@ -258,6 +365,7 @@ const game = {
      */
     startQuestions() {
         this.updateProgressBar();
+        this.updateScoreDisplay();
         this.showScreen('question-screen');
         this.displayCurrentQuestion();
     },
@@ -269,14 +377,25 @@ const game = {
         const progressBar = document.getElementById('progress-bar');
         const progressText = document.getElementById('progress-text');
         const progressCharacter = document.getElementById('progress-character');
-        
+
         const progress = (gameState.currentQuestionIndex / gameState.totalQuestions) * 100;
         progressBar.style.width = `${progress}%`;
         progressText.textContent = `${gameState.currentQuestionIndex}/${gameState.totalQuestions} Questions`;
-        
+
         if (gameState.selectedCharacter) {
             progressCharacter.src = gameState.selectedCharacter.imagePath;
             progressCharacter.alt = gameState.selectedCharacter.name;
+        }
+    },
+
+    /**
+     * Update the score display
+     */
+    updateScoreDisplay() {
+        const scoreDisplay = document.getElementById('score-display');
+        if (scoreDisplay) {
+            scoreDisplay.textContent = `First Try: ${gameState.firstTryCorrect}`;
+            scoreDisplay.title = `Wrong attempts: ${gameState.wrongAttempts}`;
         }
     },
 
@@ -285,24 +404,31 @@ const game = {
      */
     displayCurrentQuestion() {
         const question = gameState.questions[gameState.currentQuestionIndex];
-        
+
         if (!question) {
             this.showVictory();
             return;
         }
-        
-        // Reset state
+
+        // Reset state for new question
         gameState.isAnswering = false;
-        
+        gameState.currentQuestionAttempts = 0;
+
         // Question text
         document.getElementById('question-text').textContent = question.text;
-        
+
+        // Show category
+        const categoryDisplay = document.getElementById('question-category');
+        if (categoryDisplay) {
+            categoryDisplay.textContent = `${question.categoryIcon} ${question.category}`;
+        }
+
         // Handle media
         this.displayQuestionMedia(question);
-        
+
         // Render answers
         this.renderAnswers(question);
-        
+
         // Hide feedback
         const feedbackContainer = document.getElementById('feedback-container');
         feedbackContainer.classList.add('hidden');
@@ -318,29 +444,29 @@ const game = {
         const questionImage = document.getElementById('question-image');
         const questionAudio = document.getElementById('question-audio');
         const questionVideo = document.getElementById('question-video');
-        
+
         // Hide all media elements
         mediaContainer.classList.add('hidden');
         questionImage.classList.add('hidden');
         questionAudio.classList.add('hidden');
         questionVideo.classList.add('hidden');
-        
+
         if (!question.media) return;
-        
+
         // Show image if present
         if (question.media.image) {
             questionImage.src = question.media.image;
             questionImage.classList.remove('hidden');
             mediaContainer.classList.remove('hidden');
         }
-        
+
         // Show audio if present
         if (question.media.audio) {
             questionAudio.src = question.media.audio;
             questionAudio.classList.remove('hidden');
             mediaContainer.classList.remove('hidden');
         }
-        
+
         // Show video if present
         if (question.media.video) {
             questionVideo.src = question.media.video;
@@ -355,7 +481,7 @@ const game = {
      */
     renderAnswers(question) {
         const grid = document.getElementById('answers-grid');
-        
+
         grid.innerHTML = question.answers.map((answer, index) => `
             <button class="answer-btn" data-index="${index}" onclick="game.submitAnswer(${index})">
                 ${answer}
@@ -370,10 +496,11 @@ const game = {
     submitAnswer(answerIndex) {
         if (gameState.isAnswering) return;
         gameState.isAnswering = true;
-        
+
         const question = gameState.questions[gameState.currentQuestionIndex];
         const isCorrect = answerIndex === question.correctIndex;
-        
+        const isFirstTry = gameState.currentQuestionAttempts === 0;
+
         // Style the selected button
         const buttons = document.querySelectorAll('.answer-btn');
         buttons.forEach((btn, index) => {
@@ -382,31 +509,52 @@ const game = {
             }
             btn.disabled = true;
         });
-        
+
         // Show feedback
         const feedbackContainer = document.getElementById('feedback-container');
         const feedbackText = document.getElementById('feedback-text');
-        
+
         feedbackContainer.classList.remove('hidden', 'correct', 'wrong');
         feedbackContainer.classList.add(isCorrect ? 'correct' : 'wrong');
         feedbackText.classList.remove('correct', 'wrong');
         feedbackText.classList.add(isCorrect ? 'correct' : 'wrong');
-        
+
         if (isCorrect) {
             gameState.correctAnswers++;
-            feedbackText.textContent = 'Correct! The light grows stronger...';
-            
-            // Show story progression or advance to next question
+
+            // Track first-try bonus
+            if (isFirstTry) {
+                gameState.firstTryCorrect++;
+                feedbackText.textContent = 'Perfect! First try bonus! The light grows stronger...';
+            } else {
+                feedbackText.textContent = 'Correct! The light grows stronger...';
+            }
+
+            this.updateScoreDisplay();
+
+            // Check for story segment or advance
             setTimeout(() => {
-                if (question.storyProgression) {
+                const storySegment = gameState.storyBetweenQuestions[gameState.currentQuestionIndex];
+                if (storySegment) {
+                    this.showStoryProgression({ storyProgression: storySegment });
+                } else if (question.storyProgression) {
                     this.showStoryProgression(question);
                 } else {
                     this.advanceQuestion();
                 }
             }, 1500);
         } else {
-            feedbackText.textContent = 'The shadows grow stronger... Try again!';
-            
+            // Wrong answer - penalty
+            gameState.currentQuestionAttempts++;
+            gameState.wrongAttempts++;
+
+            const penaltyMessage = gameState.currentQuestionAttempts === 1
+                ? 'The shadows grow stronger... Try again! (-1 penalty)'
+                : `The shadows deepen... Attempt ${gameState.currentQuestionAttempts + 1}`;
+
+            feedbackText.textContent = penaltyMessage;
+            this.updateScoreDisplay();
+
             // Re-enable buttons for retry
             setTimeout(() => {
                 buttons.forEach(btn => {
@@ -426,14 +574,14 @@ const game = {
     showStoryProgression(question) {
         const progressionImage = document.getElementById('progression-image');
         const progressionText = document.getElementById('progression-text');
-        
+
         if (question.progressionImage) {
             progressionImage.src = question.progressionImage;
             progressionImage.classList.remove('hidden');
         } else {
             progressionImage.classList.add('hidden');
         }
-        
+
         progressionText.textContent = question.storyProgression;
         this.showScreen('story-progression');
     },
@@ -451,7 +599,7 @@ const game = {
     advanceQuestion() {
         gameState.currentQuestionIndex++;
         this.updateProgressBar();
-        
+
         if (gameState.currentQuestionIndex >= gameState.totalQuestions) {
             this.showVictory();
         } else {
@@ -465,8 +613,32 @@ const game = {
      */
     showVictory() {
         const victoryScore = document.getElementById('victory-score');
-        victoryScore.textContent = `You answered ${gameState.correctAnswers} questions on your first try!`;
-        
+        const percentage = Math.round((gameState.firstTryCorrect / gameState.totalQuestions) * 100);
+
+        let rating = '';
+        if (percentage >= 90) rating = 'LEGENDARY CHAMPION';
+        else if (percentage >= 75) rating = 'Master of Trivia';
+        else if (percentage >= 50) rating = 'Worthy Adventurer';
+        else rating = 'Brave Challenger';
+
+        victoryScore.innerHTML = `
+            <div class="final-stats">
+                <div class="stat-row">
+                    <span class="stat-label">First Try Correct:</span>
+                    <span class="stat-value">${gameState.firstTryCorrect}/${gameState.totalQuestions}</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Accuracy:</span>
+                    <span class="stat-value">${percentage}%</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Wrong Attempts:</span>
+                    <span class="stat-value penalty">${gameState.wrongAttempts}</span>
+                </div>
+                <div class="rating">${rating}</div>
+            </div>
+        `;
+
         this.updateProgressBar(); // Show 100%
         this.showScreen('victory-screen');
     },
@@ -480,10 +652,14 @@ const game = {
         gameState.totalQuestions = 0;
         gameState.currentQuestionIndex = 0;
         gameState.correctAnswers = 0;
+        gameState.firstTryCorrect = 0;
+        gameState.wrongAttempts = 0;
+        gameState.currentQuestionAttempts = 0;
         gameState.questions = [];
         gameState.storyIntroIndex = 0;
         gameState.isAnswering = false;
-        
+        gameState.storyBetweenQuestions = [];
+
         this.showScreen('title-screen');
     },
 
