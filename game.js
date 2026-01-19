@@ -31,63 +31,48 @@ const gameState = {
 
 const storySegments = {
     intro: [
-        "In the neon-lit kingdom of Trivia, darkness stirs...",
-        "A great shadow known as the Shadow of Ignorance has begun to consume the land.",
-        "Ancient knowledge fades. The light of wisdom grows dim.",
-        "But a prophecy speaks of a chosen hero who will rise...",
-        "One who can channel the power of Doctor Mays to vanquish the darkness.",
-        "That hero is YOU."
+        "The Kingdom of Trivia was once a beacon of neon light and boundless knowledge...",
+        "But the Shadow of Ignorance has drained the color from our world.",
+        "It began as a whisper—forgotten facts, blurred memories, gray skies.",
+        "Now, the Synthwave sun is dying. The data streams are corrupted.",
+        "Doctor Mays, our greatest guardian, left behind a legacy...",
+        "A power that only a true scholar can wield to reignite the grid.",
+        "That scholar... is YOU."
     ],
     progression: [
-        // Act 1 - The Neon Gateway (10%)
-        "You stand before the Neon Gateway, humming with synthwave energy.",
-        "The path ahead is paved with grid lines of pure light.",
-        "Your first steps echo through the digital void.",
+        // Act 1 - The Neon Gateway
+        "The Gateway flickers with unstable energy. The path ahead is dangerous, paved with corrupted code. You take your first step away from safety, leaving the known world behind. The destination is unknown, but the mission is clear: Restore the Light.",
 
-        // Act 2 - The Forest of Whispers (20%)
-        "Trees of fiber optic cables sway in a virtual breeze.",
-        "Cyber-owls hoot binary code from the branches.",
-        "The shadows lengthen, but your knowledge lights the way.",
+        // Act 2 - The Forest of Whispers
+        "You enter the Forest of Whispers, where truth is strangled by confusion. The chrome trees reflect distorted versions of reality, and cyber-owls screech misinformation from the branches. The path twists illogically, trying to lead you astray.",
 
-        // Act 3 - The Forgotten Library (30%)
-        "You enter the Forgotten Library, its halls echoing with lost knowledge.",
-        "The tomes whisper secrets waiting to be rediscovered.",
-        "Your wisdom grows stronger with each truth you speak.",
+        // Act 3 - The Forgotten Library
+        "The air grows cold and stale. You stand in the Forgotten Library, a graveyard of lost history. Dust covers the holographic scrolls, and the silence here is heavy with the weight of things unsaid. To proceed, you must awaken the sleeping data.",
 
-        // Act 4 - The Echoing Caverns (40%)
-        "You descend into the Echoing Caverns, crystals pulsing with forgotten power.",
-        "Ancient riddles carved into the walls test your resolve.",
-        "The shadows retreat as your knowledge illuminates the path.",
+        // Act 4 - The Echoing Caverns
+        "Beneath the surface, the Echoing Caverns pulse with a threatening rhythm. Sharp obsidian rocks tear at your resolve. The Shadow deepens here, feeding on doubt. Your footsteps echo loudly—are you walking into a trap?",
 
-        // Act 5 - The Crystal Bridge (50%)
-        "A bridge of pure light forms before you, spanning an impossible chasm.",
-        "Each step resonates with the truths you've spoken.",
-        "Doctor Mays' spirit walks beside you, guiding your path.",
+        // Act 5 - The Crystal Bridge
+        "A chasm of infinite darkness blocks your way. The only path forward is a bridge of pure light, fragile and translucent. It requires a leap of faith. One misstep, one false fact, and you fall into the void forever.",
 
-        // Act 6 - The Tower of Riddles (60%)
-        "A spiraling tower pierces the violet sky.",
-        "Stairs construct themselves from your correct answers.",
-        "The higher you climb, the clearer the truth becomes.",
+        // Act 6 - The Tower of Riddles
+        "The Tower pierces the violet sky, a monument to complexity. The stairs defy gravity, shifting and rotating. This is a test of perspective. You must climb above the noise to see the truth clearly.",
 
-        // Act 7 - The Shadow Citadel (70%)
-        "The Shadow Citadel looms above, crackling with dark energy.",
-        "The gates recognize your wisdom and slowly creak open.",
-        "The Shadow of Ignorance knows its end approaches.",
+        // Act 7 - The Shadow Citadel
+        "You have reached the heart of the enemy's territory. The Shadow Citadel looms, a jagged fortress of malice cracking with red lightning. Use your knowledge as a shield. The Shadow knows you are here, and it is afraid.",
 
-        // Act 8 - The Inner Sanctum (80%)
-        "You breach the inner sanctum, where logic twists and turns.",
-        "Illusions dance around you, but facts cut through them like a sword.",
-        "You are close now. The core of knowledge beats loudly.",
+        // Act 8 - The Inner Sanctum
+        "Inside the Sanctum, logic itself breaks down. It is a realm of abstract chaos. Geometric shapes attack your mind, trying to overwrite your logic with nonsense. But you persist. The Core of Knowledge is close. You can hear its hum.",
 
-        // Act 9 - The Final Truth (90%)
-        "You confront the Shadow of Ignorance in its final form.",
-        "It throws chaos and confusion, but your mind remains clear.",
-        "Victory is within reach. One final truth remains."
+        // Act 9 - The Final Truth
+        "This is it. The confrontation. You stand before the Shadow of Ignorance itself—a swirling vortex of lies. It screams chaos, but you speak Truth. Your answers are weapons now. Strike true, champion!"
     ],
     victory: [
-        "The Shadow of Ignorance shatters into a thousand fading wisps!",
-        "Light returns to the kingdom of Trivia!",
-        "Doctor Mays' knowledge lives on through you, champion!"
+        "A blinding flash of pure white light pierces the Shadow!",
+        "The darkness shatters! Color floods back into the grid!",
+        "The Synthwave sun rises once more, brighter than ever before.",
+        "Doctor Mays' legacy is secured. The Kingdom is saved!",
+        "You are the Master of Trivia. You are the Light."
     ]
 };
 
@@ -301,6 +286,19 @@ const game = {
         const total = gameState.totalQuestions;
         const progressionStories = storySegments.progression;
 
+        // Image Mapping for Acts 1-9
+        const actImages = [
+            "assets/story/The Neon Gateway.png",      // Act 1
+            "assets/story/The Forest of Whispers.png", // Act 2
+            "assets/story/The Forgotten Library.png", // Act 3
+            "assets/story/The Echoing Caverns.png",   // Act 4
+            "assets/story/The Crystal Bridge.png",    // Act 5
+            "assets/story/The Tower of Riddles.png",  // Act 6
+            "assets/story/The Shadow Citadel.png",    // Act 7
+            "assets/story/The Inner Sanctum.png",     // Act 8
+            "assets/story/The Final Truth.png"        // Act 9
+        ];
+
         // Map 9 key milestones (10% to 90%)
         const milestones = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9];
 
@@ -309,18 +307,17 @@ const game = {
 
             // Ensure valid index and we have a story for this act
             if (questionIndex >= 0 && questionIndex < total - 1 && index < progressionStories.length) {
-                // If there's already a story there (collision due to small question count), append or move?
-                // For simplicity, just overwrite - later acts take precedence if they collide closely
-                // But better to just find the nearest empty slot?
-                // Actually, let's just place them at exact calculated spots.
 
                 // Pick a random line from the 3 available for this act
-                // So Act index 'i' (0-8) corresponds to story indices i*3 to i*3+2.
                 const storyBaseIndex = index * 3;
                 const randomOffset = Math.floor(Math.random() * 3);
                 const finalStoryIndex = Math.min(storyBaseIndex + randomOffset, progressionStories.length - 1);
 
-                gameState.storyBetweenQuestions[questionIndex] = progressionStories[finalStoryIndex];
+                // Store text AND image
+                gameState.storyBetweenQuestions[questionIndex] = {
+                    text: progressionStories[finalStoryIndex],
+                    image: actImages[index] || "" // Fallback string if missing
+                };
             }
         });
     },
@@ -375,11 +372,17 @@ const game = {
         const storyScreen = document.getElementById('story-intro');
         const storyText = document.getElementById('story-text');
         const continueBtn = storyScreen.querySelector('.btn-neon');
+        const introImage = document.getElementById('intro-image');
 
         // Make background fully black for dramatic effect
         storyScreen.style.background = '#000';
         storyText.style.opacity = '0';
         continueBtn.style.display = 'none';
+
+        // Show intro image
+        if (introImage) {
+            introImage.classList.remove('hidden');
+        }
 
         this.showScreen('story-intro');
 
@@ -631,7 +634,15 @@ const game = {
             setTimeout(() => {
                 const storySegment = gameState.storyBetweenQuestions[gameState.currentQuestionIndex];
                 if (storySegment) {
-                    this.showStoryProgression({ storyProgression: storySegment });
+                    if (typeof storySegment === 'string') {
+                        this.showStoryProgression({ storyProgression: storySegment });
+                    } else {
+                        // It's an object with text and image
+                        this.showStoryProgression({
+                            storyProgression: storySegment.text,
+                            progressionImage: storySegment.image
+                        });
+                    }
                 } else if (question.storyProgression) {
                     this.showStoryProgression(question);
                 } else {

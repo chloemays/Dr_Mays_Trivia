@@ -1,0 +1,41 @@
+IMAGE PROMPTS FOR DOCTOR MAYS' BIRTHDAY QUEST
+Target Style: Retro 80s Synthwave Pixel Art (16-bit/32-bit aesthetic)
+Constraint: NO TEXT, NO WORDS, NO LETTERS.
+
+---
+
+Act 1: The Neon Gateway
+PROMPT: 
+Retro 80s synthwave pixel art. A massive, majestic digital gateway arch glowing with intense neon cyan and magenta light. A perspective path paved with glowing laser grid lines leads towards the gate. Background is a starry deep space void with a large retro synthwave sun on the horizon. Cinematic lighting, high contrast, clean lines. No text, no words, no interface elements.
+
+Act 2: The Forest of Whispers
+PROMPT: 
+Retro 80s synthwave pixel art. A surreal dark forest where tree trunks are made of shiny black chrome and leaves are glowing pink fiber optic cables. Robotic cyber-owls with glowing eyes perched on branches. Low-hanging digital mist on the ground. Dark purple and blue color palette. Mysterious atmosphere. No text, no words, no letters.
+
+Act 3: The Forgotten Library
+PROMPT: 
+Retro 80s synthwave pixel art. A vast indoor library hall with towering shelves. Instead of paper books, the shelves hold glowing blue holographic data scrolls and cubes. Beams of light filter down from a digital skylight. Dust motes that look like pixels. Dark, mysterious, ancient but futuristic. No text, no words, no book titles.
+
+Act 4: The Echoing Caverns
+PROMPT: 
+Retro 80s synthwave pixel art. An underground cavern system. Sharp, jagged rocks and stalactites made of dark obsidian. Large glowing crystals in neon green and pink jutting out of the walls, illuminating the cave. A futuristic underground tunnel feel. High contrast lighting. No text, no words.
+
+Act 5: The Crystal Bridge
+PROMPT: 
+Retro 80s synthwave pixel art. A minimalist bridge made of pure, translucent white laser light spanning across a bottomless black chasm. The background is an infinite digital cosmos with grid stars. A lonely, epic feeling. The bridge glows intensely against the darkness. No text, no words.
+
+Act 6: The Tower of Riddles
+PROMPT: 
+Retro 80s synthwave pixel art. A tall, spiraling futuristic tower reaching high into a deep violet sky. Floating stairs made of neon light spiral around the structure. The tower is made of black metal with glowing circuit board patterns. Majestic and dizzying perspective. No text, no words.
+
+Act 7: The Shadow Citadel
+PROMPT: 
+Retro 80s synthwave pixel art. An ominous, imposing dark fortress or citadel. Spiky, jagged architecture reminiscent of a villain's lair. Crackling with dark red and purple lightning energy. Dark clouds swirling above. Intimidating and powerful. No text, no words.
+
+Act 8: The Inner Sanctum
+PROMPT: 
+Retro 80s synthwave pixel art. An abstract interior chamber. The laws of physics are broken here. Floating geometric shapes (cubes, pyramids) producing wires and light. A central core pulsing with bright golden light. Trippy, sci-fi, "inside the computer" aesthetic. No text, no words.
+
+Act 9: The Final Truth
+PROMPT: 
+Retro 80s synthwave pixel art. A dramatic abstract confrontation scene. On one side, a brilliant beam of pure white light (Order). On the other, a swirling mass of dark glitchy shadow (Chaos). The two forces colliding in the center. Epic, cinematic, finale atmosphere. No text, no words.
