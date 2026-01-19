@@ -1,0 +1,505 @@
+{
+    "meta": {
+        "title": "Doctor Mays' Birthday Quest",
+        "birthdayMessage": "Happy Birthday Doctor Mays!",
+        "version": "1.0.0",
+        "storyIntro": [
+            "In a realm where knowledge is power and wisdom is the greatest treasure...",
+            "A great darkness known as the Shadow of Ignorance has begun to consume the land of Trivia.",
+            "The ancient Oracle speaks: 'Only a hero of wit and wisdom can push back the shadow.'",
+            "You must conquer the Trials of Knowledge to bring light back to the realm.",
+            "Each trial solved brings the kingdom closer to the Grand Celebration!",
+            "Your quest begins now, brave hero..."
+        ]
+    },
+    
+    "characters": [
+        {
+            "id": "synth_sage",
+            "name": "Synth the Sage",
+            "class": "Wizard",
+            "imagePath": "assets/characters/synth_sage.png",
+            "bio": "An ancient scholar who channels knowledge through synthwave magic"
+        },
+        {
+            "id": "blaze_ryder",
+            "name": "Blaze Ryder",
+            "class": "Rogue",
+            "imagePath": "assets/characters/blaze_ryder.png",
+            "bio": "A quick-witted thief who solves problems with style"
+        },
+        {
+            "id": "harmony_valor",
+            "name": "Harmony Valor",
+            "class": "Paladin",
+            "imagePath": "assets/characters/harmony_valor.png",
+            "bio": "A noble warrior whose strength comes from 80s power ballads"
+        },
+        {
+            "id": "whiskers_mcfluff",
+            "name": "Whiskers McFluff",
+            "class": "Ranger",
+            "imagePath": "assets/characters/whiskers_mcfluff.png",
+            "bio": "A feline archer with supernatural perception"
+        },
+        {
+            "id": "melody_rose",
+            "name": "Melody Rose",
+            "class": "Bard",
+            "imagePath": "assets/characters/melody_rose.png",
+            "bio": "A rockstar whose music literally changes reality"
+        }
+    ],
+    
+    "categories": [
+        {
+            "id": "math",
+            "name": "Mathematics",
+            "icon": "🔢",
+            "questions": [
+                {
+                    "id": "math_01",
+                    "enabled": true,
+                    "status": "complete",
+                    "text": "What is the value of π (pi) rounded to 4 decimal places?",
+                    "answers": ["3.1416", "3.1459", "3.1492", "3.1428"],
+                    "correctIndex": 0,
+                    "media": {
+                        "image": null,
+                        "audio": null,
+                        "video": null
+                    },
+                    "requiredMedia": {
+                        "image": { "needed": false, "description": null }
+                    },
+                    "storyProgression": "The ancient mathematical runes glow with understanding. The path forward becomes clearer...",
+                    "progressionImage": null,
+                    "author": "AI",
+                    "dateCreated": "2026-01-18"
+                },
+                {
+                    "id": "math_02",
+                    "enabled": true,
+                    "status": "complete",
+                    "text": "If a train travels at 60 mph for 2.5 hours, how many miles does it travel?",
+                    "answers": ["120 miles", "150 miles", "180 miles", "135 miles"],
+                    "correctIndex": 1,
+                    "media": {
+                        "image": null,
+                        "audio": null,
+                        "video": null
+                    },
+                    "requiredMedia": {
+                        "image": { "needed": false, "description": null }
+                    },
+                    "storyProgression": "Your mathematical prowess lights another torch in the darkness!",
+                    "progressionImage": null,
+                    "author": "AI",
+                    "dateCreated": "2026-01-18"
+                },
+                {
+                    "id": "math_03",
+                    "enabled": true,
+                    "status": "complete",
+                    "text": "What is the square root of 144?",
+                    "answers": ["11", "12", "13", "14"],
+                    "correctIndex": 1,
+                    "media": {
+                        "image": null,
+                        "audio": null,
+                        "video": null
+                    },
+                    "requiredMedia": {
+                        "image": { "needed": false, "description": null }
+                    },
+                    "storyProgression": "Numbers dance in the air as you solve another riddle of the ancients!",
+                    "progressionImage": null,
+                    "author": "AI",
+                    "dateCreated": "2026-01-18"
+                }
+            ]
+        },
+        {
+            "id": "cats",
+            "name": "Cat Expertise",
+            "icon": "🐱",
+            "questions": [
+                {
+                    "id": "cats_01",
+                    "enabled": true,
+                    "status": "complete",
+                    "text": "What breed of cat is known for its folded ears?",
+                    "answers": ["Scottish Fold", "Persian", "Siamese", "Maine Coon"],
+                    "correctIndex": 0,
+                    "media": {
+                        "image": null,
+                        "audio": null,
+                        "video": null
+                    },
+                    "requiredMedia": {
+                        "image": { "needed": false, "description": null }
+                    },
+                    "storyProgression": "The guardian cat spirit nods in approval. You truly understand the feline ways!",
+                    "progressionImage": null,
+                    "author": "AI",
+                    "dateCreated": "2026-01-18"
+                },
+                {
+                    "id": "cats_02",
+                    "enabled": true,
+                    "status": "complete",
+                    "text": "How many hours per day does the average cat sleep?",
+                    "answers": ["8-10 hours", "12-16 hours", "6-8 hours", "18-20 hours"],
+                    "correctIndex": 1,
+                    "media": {
+                        "image": null,
+                        "audio": null,
+                        "video": null
+                    },
+                    "requiredMedia": {
+                        "image": { "needed": false, "description": null }
+                    },
+                    "storyProgression": "The mystical cat oracle purrs with delight at your wisdom!",
+                    "progressionImage": null,
+                    "author": "AI",
+                    "dateCreated": "2026-01-18"
+                },
+                {
+                    "id": "cats_03",
+                    "enabled": true,
+                    "status": "complete",
+                    "text": "What is a group of cats called?",
+                    "answers": ["A pack", "A clowder", "A herd", "A pride"],
+                    "correctIndex": 1,
+                    "media": {
+                        "image": null,
+                        "audio": null,
+                        "video": null
+                    },
+                    "requiredMedia": {
+                        "image": { "needed": false, "description": null }
+                    },
+                    "storyProgression": "Ancient feline knowledge flows through you!",
+                    "progressionImage": null,
+                    "author": "AI",
+                    "dateCreated": "2026-01-18"
+                }
+            ]
+        },
+        {
+            "id": "musicals",
+            "name": "Musicals",
+            "icon": "🎭",
+            "questions": [
+                {
+                    "id": "musicals_01",
+                    "enabled": true,
+                    "status": "complete",
+                    "text": "Which musical features the song 'Memory'?",
+                    "answers": ["Phantom of the Opera", "Les Misérables", "Cats", "Chicago"],
+                    "correctIndex": 2,
+                    "media": {
+                        "image": null,
+                        "audio": null,
+                        "video": null
+                    },
+                    "requiredMedia": {
+                        "image": { "needed": false, "description": null }
+                    },
+                    "storyProgression": "The theater spirits applaud your Broadway brilliance!",
+                    "progressionImage": null,
+                    "author": "AI",
+                    "dateCreated": "2026-01-18"
+                },
+                {
+                    "id": "musicals_02",
+                    "enabled": true,
+                    "status": "complete",
+                    "text": "Who wrote the music for 'Hamilton'?",
+                    "answers": ["Stephen Sondheim", "Andrew Lloyd Webber", "Lin-Manuel Miranda", "Jonathan Larson"],
+                    "correctIndex": 2,
+                    "media": {
+                        "image": null,
+                        "audio": null,
+                        "video": null
+                    },
+                    "requiredMedia": {
+                        "image": { "needed": false, "description": null }
+                    },
+                    "storyProgression": "Your knowledge of the theatrical arts is legendary!",
+                    "progressionImage": null,
+                    "author": "AI",
+                    "dateCreated": "2026-01-18"
+                },
+                {
+                    "id": "musicals_03",
+                    "enabled": true,
+                    "status": "complete",
+                    "text": "In 'The Phantom of the Opera', what is the Phantom's real name?",
+                    "answers": ["Raoul", "Erik", "André", "Firmin"],
+                    "correctIndex": 1,
+                    "media": {
+                        "image": null,
+                        "audio": null,
+                        "video": null
+                    },
+                    "requiredMedia": {
+                        "image": { "needed": false, "description": null }
+                    },
+                    "storyProgression": "The music of the night celebrates your wisdom!",
+                    "progressionImage": null,
+                    "author": "AI",
+                    "dateCreated": "2026-01-18"
+                }
+            ]
+        },
+        {
+            "id": "music80s",
+            "name": "70s/80s Music",
+            "icon": "🎸",
+            "questions": [
+                {
+                    "id": "music80s_01",
+                    "enabled": true,
+                    "status": "complete",
+                    "text": "Which band released 'Take On Me' in 1985?",
+                    "answers": ["Duran Duran", "a-ha", "Depeche Mode", "Tears for Fears"],
+                    "correctIndex": 1,
+                    "media": {
+                        "image": null,
+                        "audio": null,
+                        "video": null
+                    },
+                    "requiredMedia": {
+                        "image": { "needed": false, "description": null }
+                    },
+                    "storyProgression": "The synthwave spirits recognize a true child of the 80s!",
+                    "progressionImage": null,
+                    "author": "AI",
+                    "dateCreated": "2026-01-18"
+                },
+                {
+                    "id": "music80s_02",
+                    "enabled": true,
+                    "status": "complete",
+                    "text": "Who sang 'Bohemian Rhapsody'?",
+                    "answers": ["Led Zeppelin", "The Rolling Stones", "Queen", "Pink Floyd"],
+                    "correctIndex": 2,
+                    "media": {
+                        "image": null,
+                        "audio": null,
+                        "video": null
+                    },
+                    "requiredMedia": {
+                        "image": { "needed": false, "description": null }
+                    },
+                    "storyProgression": "Rock legends salute your musical knowledge!",
+                    "progressionImage": null,
+                    "author": "AI",
+                    "dateCreated": "2026-01-18"
+                },
+                {
+                    "id": "music80s_03",
+                    "enabled": true,
+                    "status": "complete",
+                    "text": "What year was Michael Jackson's 'Thriller' album released?",
+                    "answers": ["1980", "1982", "1984", "1986"],
+                    "correctIndex": 1,
+                    "media": {
+                        "image": null,
+                        "audio": null,
+                        "video": null
+                    },
+                    "requiredMedia": {
+                        "image": { "needed": false, "description": null }
+                    },
+                    "storyProgression": "The King of Pop's legacy shines through your knowledge!",
+                    "progressionImage": null,
+                    "author": "AI",
+                    "dateCreated": "2026-01-18"
+                }
+            ]
+        },
+        {
+            "id": "psychiatry",
+            "name": "Psychiatry",
+            "icon": "🧠",
+            "questions": [
+                {
+                    "id": "psychiatry_01",
+                    "enabled": true,
+                    "status": "complete",
+                    "text": "Who is considered the father of psychoanalysis?",
+                    "answers": ["Carl Jung", "B.F. Skinner", "Sigmund Freud", "Ivan Pavlov"],
+                    "correctIndex": 2,
+                    "media": {
+                        "image": null,
+                        "audio": null,
+                        "video": null
+                    },
+                    "requiredMedia": {
+                        "image": { "needed": false, "description": null }
+                    },
+                    "storyProgression": "Your understanding of the human mind illuminates the darkness!",
+                    "progressionImage": null,
+                    "author": "AI",
+                    "dateCreated": "2026-01-18"
+                },
+                {
+                    "id": "psychiatry_02",
+                    "enabled": true,
+                    "status": "complete",
+                    "text": "What does CBT stand for in psychotherapy?",
+                    "answers": ["Cognitive Behavioral Therapy", "Clinical Brain Treatment", "Comprehensive Behavioral Training", "Counseling Based Techniques"],
+                    "correctIndex": 0,
+                    "media": {
+                        "image": null,
+                        "audio": null,
+                        "video": null
+                    },
+                    "requiredMedia": {
+                        "image": { "needed": false, "description": null }
+                    },
+                    "storyProgression": "Your therapeutic wisdom brings healing to the realm!",
+                    "progressionImage": null,
+                    "author": "AI",
+                    "dateCreated": "2026-01-18"
+                },
+                {
+                    "id": "psychiatry_03",
+                    "enabled": true,
+                    "status": "complete",
+                    "text": "Which neurotransmitter is often called the 'feel-good' chemical?",
+                    "answers": ["Adrenaline", "Dopamine", "Cortisol", "Acetylcholine"],
+                    "correctIndex": 1,
+                    "media": {
+                        "image": null,
+                        "audio": null,
+                        "video": null
+                    },
+                    "requiredMedia": {
+                        "image": { "needed": false, "description": null }
+                    },
+                    "storyProgression": "The ancient healers recognize your knowledge of the mind!",
+                    "progressionImage": null,
+                    "author": "AI",
+                    "dateCreated": "2026-01-18"
+                }
+            ]
+        },
+        {
+            "id": "baseball",
+            "name": "Baseball",
+            "icon": "⚾",
+            "questions": [
+                {
+                    "id": "baseball_01",
+                    "enabled": true,
+                    "status": "complete",
+                    "text": "In what year did the Kansas City Royals win their first World Series?",
+                    "answers": ["1980", "1983", "1985", "1988"],
+                    "correctIndex": 2,
+                    "media": {
+                        "image": null,
+                        "audio": null,
+                        "video": null
+                    },
+                    "requiredMedia": {
+                        "image": { "needed": false, "description": null }
+                    },
+                    "storyProgression": "The spirit of George Brett salutes your Royals knowledge!",
+                    "progressionImage": null,
+                    "author": "AI",
+                    "dateCreated": "2026-01-18"
+                },
+                {
+                    "id": "baseball_02",
+                    "enabled": true,
+                    "status": "complete",
+                    "text": "How many innings are in a standard professional baseball game?",
+                    "answers": ["7", "8", "9", "10"],
+                    "correctIndex": 2,
+                    "media": {
+                        "image": null,
+                        "audio": null,
+                        "video": null
+                    },
+                    "requiredMedia": {
+                        "image": { "needed": false, "description": null }
+                    },
+                    "storyProgression": "A home run of knowledge! The crowd goes wild!",
+                    "progressionImage": null,
+                    "author": "AI",
+                    "dateCreated": "2026-01-18"
+                },
+                {
+                    "id": "baseball_03",
+                    "enabled": true,
+                    "status": "complete",
+                    "text": "Who holds the record for most career home runs in MLB history?",
+                    "answers": ["Babe Ruth", "Hank Aaron", "Barry Bonds", "Willie Mays"],
+                    "correctIndex": 2,
+                    "media": {
+                        "image": null,
+                        "audio": null,
+                        "video": null
+                    },
+                    "requiredMedia": {
+                        "image": { "needed": false, "description": null }
+                    },
+                    "storyProgression": "Your baseball expertise is Hall of Fame worthy!",
+                    "progressionImage": null,
+                    "author": "AI",
+                    "dateCreated": "2026-01-18"
+                }
+            ]
+        },
+        {
+            "id": "cooking",
+            "name": "Cooking",
+            "icon": "🍳",
+            "questions": [
+                {
+                    "id": "cooking_01",
+                    "enabled": true,
+                    "status": "complete",
+                    "text": "What is the technique called when you cook food briefly in boiling water, then plunge it into ice water?",
+                    "answers": ["Braising", "Blanching", "Sautéing", "Poaching"],
+                    "correctIndex": 1,
+                    "media": {
+                        "image": null,
+                        "audio": null,
+                        "video": null
+                    },
+                    "requiredMedia": {
+                        "image": { "needed": false, "description": null }
+                    },
+                    "storyProgression": "The culinary spirits are impressed by your kitchen knowledge!",
+                    "progressionImage": null,
+                    "author": "AI",
+                    "dateCreated": "2026-01-18"
+                },
+                {
+                    "id": "cooking_02",
+                    "enabled": true,
+                    "status": "complete",
+                    "text": "What is the primary ingredient in a traditional roux?",
+                    "answers": ["Butter and flour", "Eggs and cream", "Oil and cornstarch", "Milk and cheese"],
+                    "correctIndex": 0,
+                    "media": {
+                        "image": null,
+                        "audio": null,
+                        "video": null
+                    },
+                    "requiredMedia": {
+                        "image": { "needed": false, "description": null }
+                    },
+                    "storyProgression": "Master Chef skills unlocked! The feast will be legendary!",
+                    "progressionImage": null,
+                    "author": "AI",
+                    "dateCreated": "2026-01-18"
+                }
+            ]
+        }
+    ]
+}

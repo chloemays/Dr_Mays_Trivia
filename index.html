@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Mays' Birthday Quest</title>
+    <meta name="description" content="A D&D-inspired trivia adventure celebrating Doctor Mays' birthday with synthwave 80s aesthetics">
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <!-- Game Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Title Screen -->
+        <section id="title-screen" class="game-screen active">
+            <div class="screen-content">
+                <h1 class="game-title">Doctor Mays'</h1>
+                <h2 class="game-subtitle">Birthday Quest</h2>
+                <p class="tagline">A Trivia Adventure</p>
+                <button class="btn-neon btn-primary-neon" onclick="game.startGame()">Begin Quest</button>
+            </div>
+        </section>
+
+        <!-- Birthday Splash -->
+        <section id="birthday-splash" class="game-screen">
+            <div class="screen-content">
+                <div class="birthday-glow">
+                    <h1 class="birthday-text">Happy Birthday</h1>
+                    <h2 class="birthday-name">Doctor Mays!</h2>
+                </div>
+                <button class="btn-neon btn-secondary-neon" onclick="game.showCharacterSelect()">Continue</button>
+            </div>
+        </section>
+
+        <!-- Character Selection -->
+        <section id="character-select" class="game-screen">
+            <div class="screen-content">
+                <h2 class="section-title">Choose Your Hero</h2>
+                <div id="character-grid" class="character-grid">
+                    <!-- Characters populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Question Count Selection -->
+        <section id="question-count-select" class="game-screen">
+            <div class="screen-content">
+                <h2 class="section-title">How Many Trials?</h2>
+                <p class="section-description">Choose the length of your quest</p>
+                <div id="question-count-options" class="count-options">
+                    <!-- Options populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Intro -->
+        <section id="story-intro" class="game-screen">
+            <div class="screen-content">
+                <div class="story-container">
+                    <p id="story-text" class="story-text"></p>
+                </div>
+                <button class="btn-neon btn-secondary-neon" onclick="game.advanceStory()">Continue</button>
+            </div>
+        </section>
+
+        <!-- Question Screen -->
+        <section id="question-screen" class="game-screen">
+            <!-- Progress Bar -->
+            <div class="progress-container">
+                <div class="progress-info">
+                    <img id="progress-character" class="progress-character-img" src="" alt="Character">
+                    <span id="progress-text" class="progress-text">0/0 Questions</span>
+                </div>
+                <div class="progress-bar-container">
+                    <div id="progress-bar" class="progress-bar"></div>
+                </div>
+            </div>
+
+            <div class="screen-content question-content">
+                <div class="question-container">
+                    <!-- Media Container (shown when question has media) -->
+                    <div id="media-container" class="media-container hidden">
+                        <img id="question-image" class="question-media question-image hidden" src="" alt="Question Image">
+                        <audio id="question-audio" class="question-media question-audio hidden" controls></audio>
+                        <video id="question-video" class="question-media question-video hidden" controls></video>
+                    </div>
+                    
+                    <h3 id="question-text" class="question-text"></h3>
+                    
+                    <div id="answers-grid" class="answers-grid">
+                        <!-- Answers populated by JavaScript -->
+                    </div>
+                    
+                    <div id="feedback-container" class="feedback-container hidden">
+                        <p id="feedback-text" class="feedback-text"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Progression (between questions) -->
+        <section id="story-progression" class="game-screen">
+            <div class="screen-content">
+                <div class="story-container">
+                    <img id="progression-image" class="progression-image" src="" alt="Story Scene">
+                    <p id="progression-text" class="story-text"></p>
+                </div>
+                <button class="btn-neon btn-secondary-neon" onclick="game.continueAfterStory()">Continue</button>
+            </div>
+        </section>
+
+        <!-- Victory Screen -->
+        <section id="victory-screen" class="game-screen">
+            <div class="screen-content">
+                <div class="victory-container">
+                    <h1 class="victory-title">Victory!</h1>
+                    <h2 class="victory-subtitle">The Realm is Saved!</h2>
+                    <div class="victory-stats">
+                        <p id="victory-score" class="victory-score"></p>
+                    </div>
+                    <div class="celebration-effects"></div>
+                </div>
+                <button class="btn-neon btn-primary-neon" onclick="game.restartGame()">Play Again</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Game Logic -->
+    <script src="game.js"></script>
+</body>
+</html>

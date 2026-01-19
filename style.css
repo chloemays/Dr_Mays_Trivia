@@ -1,0 +1,709 @@
+/* =====================================================
+   Doctor Mays' Birthday Quest - Synthwave Design System
+   ===================================================== */
+
+/* CSS Custom Properties - Synthwave Color Palette */
+:root {
+    /* Primary Colors */
+    --deep-space: #0d0221;
+    --neon-purple: #541388;
+    --hot-pink: #f72585;
+    --electric-blue: #4361ee;
+    --chrome-silver: #e0e0e0;
+    --sunset-orange: #ff6b35;
+    --laser-red: #d00000;
+    
+    /* Extended Palette */
+    --dark-purple: #2d0a4e;
+    --medium-purple: #7b2cbf;
+    --cyan-glow: #00f5ff;
+    --gold-accent: #ffd700;
+    
+    /* Gradients */
+    --gradient-main: linear-gradient(135deg, var(--deep-space) 0%, var(--neon-purple) 50%, var(--dark-purple) 100%);
+    --gradient-button: linear-gradient(135deg, var(--hot-pink) 0%, var(--neon-purple) 100%);
+    --gradient-success: linear-gradient(135deg, var(--sunset-orange) 0%, var(--gold-accent) 100%);
+    
+    /* Typography */
+    --font-display: 'Orbitron', sans-serif;
+    --font-retro: 'Press Start 2P', cursive;
+    --font-body: 'Inter', sans-serif;
+    
+    /* Spacing */
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-xxl: 3rem;
+    
+    /* Transitions */
+    --transition-fast: 150ms ease;
+    --transition-normal: 300ms ease;
+    --transition-slow: 500ms ease;
+    
+    /* Shadows / Glows */
+    --glow-pink: 0 0 10px var(--hot-pink), 0 0 20px var(--hot-pink), 0 0 40px var(--hot-pink);
+    --glow-blue: 0 0 10px var(--electric-blue), 0 0 20px var(--electric-blue), 0 0 40px var(--electric-blue);
+    --glow-purple: 0 0 10px var(--neon-purple), 0 0 20px var(--neon-purple), 0 0 40px var(--medium-purple);
+    --glow-orange: 0 0 10px var(--sunset-orange), 0 0 20px var(--sunset-orange), 0 0 40px var(--sunset-orange);
+    --glow-red: 0 0 10px var(--laser-red), 0 0 20px var(--laser-red);
+}
+
+/* Reset & Base Styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    background: var(--gradient-main);
+    color: var(--chrome-silver);
+    min-height: 100vh;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Game Container */
+#game-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Screen Management */
+.game-screen {
+    display: none;
+    min-height: 100vh;
+    width: 100%;
+    padding: var(--space-lg);
+}
+
+.game-screen.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn var(--transition-slow) ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Screen Content */
+.screen-content {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-xl);
+    text-align: center;
+}
+
+/* =====================================================
+   Typography
+   ===================================================== */
+
+.game-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 8vw, 4rem);
+    font-weight: 900;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, var(--chrome-silver) 0%, var(--hot-pink) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: none;
+    filter: drop-shadow(0 0 20px var(--hot-pink));
+    letter-spacing: 0.1em;
+}
+
+.game-subtitle {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 6vw, 3rem);
+    font-weight: 700;
+    color: var(--electric-blue);
+    text-shadow: var(--glow-blue);
+    margin-top: calc(var(--space-sm) * -1);
+}
+
+.tagline {
+    font-family: var(--font-retro);
+    font-size: clamp(0.6rem, 2vw, 0.9rem);
+    color: var(--cyan-glow);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.section-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    font-weight: 700;
+    color: var(--chrome-silver);
+    text-shadow: var(--glow-purple);
+}
+
+.section-description {
+    font-size: 1.1rem;
+    color: var(--chrome-silver);
+    opacity: 0.8;
+}
+
+/* =====================================================
+   Buttons
+   ===================================================== */
+
+.btn-neon {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: var(--space-md) var(--space-xl);
+    border: 2px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary-neon {
+    background: var(--gradient-button);
+    color: white;
+    border-color: var(--hot-pink);
+    box-shadow: var(--glow-pink);
+}
+
+.btn-primary-neon:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--hot-pink), 0 0 40px var(--hot-pink), 0 0 60px var(--hot-pink);
+}
+
+.btn-secondary-neon {
+    background: transparent;
+    color: var(--electric-blue);
+    border-color: var(--electric-blue);
+    box-shadow: var(--glow-blue);
+}
+
+.btn-secondary-neon:hover {
+    background: var(--electric-blue);
+    color: var(--deep-space);
+    transform: scale(1.05);
+}
+
+/* =====================================================
+   Birthday Splash
+   ===================================================== */
+
+.birthday-glow {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+}
+
+.birthday-text {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 8vw, 4rem);
+    font-weight: 900;
+    color: var(--gold-accent);
+    text-shadow: 0 0 20px var(--gold-accent), 0 0 40px var(--sunset-orange);
+}
+
+.birthday-name {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 10vw, 5rem);
+    font-weight: 900;
+    background: linear-gradient(180deg, var(--hot-pink) 0%, var(--sunset-orange) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 0 30px var(--hot-pink));
+}
+
+/* =====================================================
+   Character Selection
+   ===================================================== */
+
+.character-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-lg);
+    max-width: 1000px;
+}
+
+.character-card {
+    background: rgba(84, 19, 136, 0.3);
+    border: 2px solid var(--medium-purple);
+    border-radius: 12px;
+    padding: var(--space-lg);
+    width: 180px;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.character-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--hot-pink);
+    box-shadow: var(--glow-pink);
+}
+
+.character-card.selected {
+    border-color: var(--cyan-glow);
+    box-shadow: 0 0 20px var(--cyan-glow), 0 0 40px var(--cyan-glow);
+}
+
+.character-portrait {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid var(--electric-blue);
+    object-fit: cover;
+    background: var(--dark-purple);
+}
+
+.character-name {
+    font-family: var(--font-display);
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--chrome-silver);
+}
+
+.character-class {
+    font-family: var(--font-retro);
+    font-size: 0.6rem;
+    color: var(--hot-pink);
+    text-transform: uppercase;
+}
+
+.character-bio {
+    font-size: 0.75rem;
+    color: var(--chrome-silver);
+    opacity: 0.7;
+    line-height: 1.4;
+}
+
+/* =====================================================
+   Question Count Selection
+   ===================================================== */
+
+.count-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-md);
+}
+
+.count-btn {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 700;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid var(--electric-blue);
+    background: rgba(67, 97, 238, 0.2);
+    color: var(--chrome-silver);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+}
+
+.count-btn:hover {
+    transform: scale(1.1);
+    background: var(--electric-blue);
+    color: var(--deep-space);
+    box-shadow: var(--glow-blue);
+}
+
+/* =====================================================
+   Story Screens
+   ===================================================== */
+
+.story-container {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-lg);
+}
+
+.story-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--chrome-silver);
+    text-align: center;
+    font-style: italic;
+}
+
+.progression-image {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 8px;
+    border: 2px solid var(--medium-purple);
+    box-shadow: var(--glow-purple);
+}
+
+/* =====================================================
+   Question Screen
+   ===================================================== */
+
+/* Progress Bar */
+.progress-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(13, 2, 33, 0.95);
+    padding: var(--space-sm) var(--space-lg);
+    border-bottom: 2px solid var(--neon-purple);
+    z-index: 100;
+}
+
+.progress-info {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-sm);
+}
+
+.progress-character-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--electric-blue);
+    object-fit: cover;
+}
+
+.progress-text {
+    font-family: var(--font-display);
+    font-size: 0.9rem;
+    color: var(--chrome-silver);
+}
+
+.progress-bar-container {
+    width: 100%;
+    height: 8px;
+    background: var(--dark-purple);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, var(--electric-blue) 0%, var(--medium-purple) 50%, var(--hot-pink) 100%);
+    border-radius: 4px;
+    transition: width var(--transition-normal);
+    width: 0%;
+}
+
+/* Question Content */
+.question-content {
+    padding-top: 100px;
+}
+
+.question-container {
+    background: rgba(45, 10, 78, 0.5);
+    border: 2px solid var(--medium-purple);
+    border-radius: 16px;
+    padding: var(--space-xl);
+    max-width: 700px;
+    width: 100%;
+}
+
+.question-text {
+    font-family: var(--font-body);
+    font-size: clamp(1.1rem, 3vw, 1.4rem);
+    font-weight: 500;
+    color: var(--chrome-silver);
+    margin-bottom: var(--space-xl);
+    line-height: 1.6;
+}
+
+/* Media Container */
+.media-container {
+    margin-bottom: var(--space-lg);
+}
+
+.question-image {
+    max-width: 100%;
+    max-height: 250px;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: block;
+}
+
+.question-audio {
+    width: 100%;
+    max-width: 400px;
+}
+
+.question-video {
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 16/9;
+}
+
+/* Answers Grid */
+.answers-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-md);
+}
+
+.answer-btn {
+    flex: 1 1 calc(50% - var(--space-md));
+    min-width: 200px;
+    min-height: 60px;
+    padding: var(--space-md) var(--space-lg);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--chrome-silver);
+    background: rgba(67, 97, 238, 0.15);
+    border: 2px solid var(--electric-blue);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+}
+
+.answer-btn:hover {
+    background: rgba(67, 97, 238, 0.3);
+    transform: translateY(-2px);
+    box-shadow: var(--glow-blue);
+}
+
+.answer-btn.correct {
+    background: rgba(255, 107, 53, 0.3);
+    border-color: var(--sunset-orange);
+    box-shadow: var(--glow-orange);
+    animation: correctPulse 0.5s ease;
+}
+
+.answer-btn.wrong {
+    background: rgba(208, 0, 0, 0.3);
+    border-color: var(--laser-red);
+    box-shadow: var(--glow-red);
+    animation: shake 0.5s ease;
+}
+
+@keyframes correctPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20% { transform: translateX(-10px); }
+    40% { transform: translateX(10px); }
+    60% { transform: translateX(-10px); }
+    80% { transform: translateX(10px); }
+}
+
+/* Feedback */
+.feedback-container {
+    margin-top: var(--space-lg);
+    padding: var(--space-md);
+    border-radius: 8px;
+}
+
+.feedback-container.correct {
+    background: rgba(255, 107, 53, 0.2);
+    border: 1px solid var(--sunset-orange);
+}
+
+.feedback-container.wrong {
+    background: rgba(208, 0, 0, 0.2);
+    border: 1px solid var(--laser-red);
+}
+
+.feedback-text {
+    font-family: var(--font-display);
+    font-size: 1rem;
+}
+
+.feedback-text.correct {
+    color: var(--sunset-orange);
+}
+
+.feedback-text.wrong {
+    color: var(--laser-red);
+}
+
+/* =====================================================
+   Victory Screen
+   ===================================================== */
+
+.victory-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-lg);
+}
+
+.victory-title {
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 12vw, 6rem);
+    font-weight: 900;
+    background: linear-gradient(180deg, var(--gold-accent) 0%, var(--sunset-orange) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 0 30px var(--gold-accent));
+    animation: victoryPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes victoryPulse {
+    0%, 100% { transform: scale(1); filter: drop-shadow(0 0 30px var(--gold-accent)); }
+    50% { transform: scale(1.05); filter: drop-shadow(0 0 50px var(--gold-accent)); }
+}
+
+.victory-subtitle {
+    font-family: var(--font-display);
+    font-size: clamp(1.2rem, 4vw, 2rem);
+    color: var(--chrome-silver);
+    text-shadow: var(--glow-purple);
+}
+
+.victory-stats {
+    padding: var(--space-lg);
+    background: rgba(84, 19, 136, 0.3);
+    border: 2px solid var(--medium-purple);
+    border-radius: 12px;
+}
+
+.victory-score {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: var(--cyan-glow);
+}
+
+/* =====================================================
+   Utility Classes
+   ===================================================== */
+
+.hidden {
+    display: none !important;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* =====================================================
+   Responsive Design
+   ===================================================== */
+
+/* Mobile (< 480px) */
+@media (max-width: 479px) {
+    .game-screen {
+        padding: var(--space-md);
+    }
+    
+    .character-grid {
+        gap: var(--space-md);
+    }
+    
+    .character-card {
+        width: 140px;
+        padding: var(--space-md);
+    }
+    
+    .character-portrait {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .answer-btn {
+        flex: 1 1 100%;
+        min-width: 100%;
+    }
+    
+    .count-btn {
+        width: 60px;
+        height: 60px;
+        font-size: 1rem;
+    }
+    
+    .question-container {
+        padding: var(--space-lg);
+    }
+}
+
+/* Tablet (480px - 768px) */
+@media (min-width: 480px) and (max-width: 768px) {
+    .answer-btn {
+        flex: 1 1 calc(50% - var(--space-md));
+    }
+    
+    .character-card {
+        width: 160px;
+    }
+}
+
+/* Desktop (> 768px) */
+@media (min-width: 769px) {
+    .character-grid {
+        gap: var(--space-xl);
+    }
+    
+    .character-card {
+        width: 180px;
+    }
+    
+    .answer-btn {
+        flex: 1 1 calc(50% - var(--space-md));
+        max-width: calc(50% - var(--space-md));
+    }
+}
+
+/* =====================================================
+   Scanline Effect (Optional - uncomment to enable)
+   ===================================================== */
+
+/*
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.1) 1px,
+        transparent 1px,
+        transparent 2px
+    );
+    pointer-events: none;
+    z-index: 9999;
+}
+*/
