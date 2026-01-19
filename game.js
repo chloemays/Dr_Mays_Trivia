@@ -17,6 +17,7 @@ const gameState = {
     firstTryCorrect: 0, // Track first-try correct answers
     wrongAttempts: 0, // Track total wrong attempts
     currentQuestionAttempts: 0, // Wrong attempts on current question
+    consecutiveWrong: 0, // Track consecutive wrong answers for penalties
     currentAct: 1,
     questions: [],
     storyIntroIndex: 0,
@@ -38,38 +39,49 @@ const storySegments = {
         "That hero is YOU."
     ],
     progression: [
-        // Act 1 - The Forgotten Library (10%+)
-        "You step through the ancient gates of the Forgotten Library.",
-        "Dust motes dance in beams of neon light filtering through stained glass.",
-        "The great librarian's ghost appears, nodding in approval.",
-        "Ancient tomes float from their shelves, drawn to your growing wisdom.",
-        "The first seal on the Shadow's prison begins to crack.",
+        // Act 1 - The Neon Gateway (10%)
+        "You stand before the Neon Gateway, humming with synthwave energy.",
+        "The path ahead is paved with grid lines of pure light.",
+        "Your first steps echo through the digital void.",
 
-        // Act 2 - The Echoing Caverns (30%+)
-        "You descend into the Echoing Caverns, crystals humming with power.",
-        "The walls themselves seem to test you, riddles carved in luminescent stone.",
-        "Shadows scatter as your knowledge shines bright.",
-        "The cavern creatures bow before your intellectual might.",
-        "Deep below, you feel the Shadow of Ignorance trembling.",
+        // Act 2 - The Forest of Whispers (20%)
+        "Trees of fiber optic cables sway in a virtual breeze.",
+        "Cyber-owls hoot binary code from the branches.",
+        "The shadows lengthen, but your knowledge lights the way.",
 
-        // Act 3 - The Crystal Bridge (50%+)
+        // Act 3 - The Forgotten Library (30%)
+        "You enter the Forgotten Library, its halls echoing with lost knowledge.",
+        "The tomes whisper secrets waiting to be rediscovered.",
+        "Your wisdom grows stronger with each truth you speak.",
+
+        // Act 4 - The Echoing Caverns (40%)
+        "You descend into the Echoing Caverns, crystals pulsing with forgotten power.",
+        "Ancient riddles carved into the walls test your resolve.",
+        "The shadows retreat as your knowledge illuminates the path.",
+
+        // Act 5 - The Crystal Bridge (50%)
         "A bridge of pure light forms before you, spanning an impossible chasm.",
         "Each step resonates with the truths you've spoken.",
-        "The realm between knowledge and ignorance opens before you.",
         "Doctor Mays' spirit walks beside you, guiding your path.",
-        "The Shadow Citadel comes into view on the distant horizon.",
 
-        // Act 4 - The Shadow Citadel (70%+)
-        "You stand before the Shadow Citadel, its dark towers crackling with energy.",
+        // Act 6 - The Tower of Riddles (60%)
+        "A spiraling tower pierces the violet sky.",
+        "Stairs construct themselves from your correct answers.",
+        "The higher you climb, the clearer the truth becomes.",
+
+        // Act 7 - The Shadow Citadel (70%)
+        "The Shadow Citadel looms above, crackling with dark energy.",
         "The gates recognize your wisdom and slowly creak open.",
-        "Inside, shadows whisper lies, but you see through their deceptions.",
-        "The throne room awaits. The final confrontation draws near.",
         "The Shadow of Ignorance knows its end approaches.",
 
-        // Climax (90%+)
-        "You confront the Shadow of Ignorance in its sanctum.",
-        "It throws riddles and confusion, but your mind remains clear.",
-        "Light radiates from you, pushing back millennia of darkness.",
+        // Act 8 - The Inner Sanctum (80%)
+        "You breach the inner sanctum, where logic twists and turns.",
+        "Illusions dance around you, but facts cut through them like a sword.",
+        "You are close now. The core of knowledge beats loudly.",
+
+        // Act 9 - The Final Truth (90%)
+        "You confront the Shadow of Ignorance in its final form.",
+        "It throws chaos and confusion, but your mind remains clear.",
         "Victory is within reach. One final truth remains."
     ],
     victory: [
@@ -90,6 +102,7 @@ const game = {
     async init() {
         try {
             await this.loadConfig();
+            if (window.audioManager) await window.audioManager.init();
             this.showScreen('title-screen');
             console.log('Doctor Mays\' Birthday Quest initialized!');
         } catch (error) {
@@ -98,15 +111,50 @@ const game = {
         }
     },
 
+    penalties: [
+        "Drink another player's drink!",
+        "The next player chooses your answer!",
+        "Speak with a robot voice until next turn!",
+        "Do 5 jumping jacks!",
+        "Compliment the person correctly answering next!",
+        "You cannot speak for the next question!",
+        "You must sing your answer next time!",
+        "Give a high-five to the person on your left!",
+        "Confess an embarrassing 80s trend you liked!",
+        "Do a dramatic reading of the next question!",
+        "Act like a T-Rex for the next 30 seconds!",
+        "Do your best evil laugh!",
+        "Whatever you say next must rhyme!"
+    ],
+
     /**
      * Load game configuration from JSON file
      */
     async loadConfig() {
-        const response = await fetch('gameConfig.json');
-        if (!response.ok) {
-            throw new Error('Failed to load gameConfig.json');
+        try {
+            // Load manifest
+            const manifestResponse = await fetch('assets/config/manifest.json');
+            if (!manifestResponse.ok) throw new Error('Failed to load manifest.json');
+            const manifest = await manifestResponse.json();
+
+            // Load all parts in parallel
+            const [metadata, characters, ...categories] = await Promise.all([
+                fetch(manifest.metadata).then(r => r.json()),
+                fetch(manifest.characters).then(r => r.json()),
+                ...manifest.categories.map(url => fetch(url).then(r => r.json()))
+            ]);
+
+            // Assemble config
+            gameState.config = {
+                ...metadata,
+                characters: characters,
+                categories: categories
+            };
+
+        } catch (error) {
+            console.error('Config loading failed:', error);
+            throw new Error('Failed to load game configuration');
         }
-        gameState.config = await response.json();
     },
 
     /**
@@ -197,10 +245,11 @@ const game = {
         const container = document.getElementById('question-count-options');
         const totalAvailable = this.getTotalAvailableQuestions();
 
-        // Offer options: 10, 15, 20, 25, 30 or max available (minimum 10)
-        const options = [10, 15, 20, 25, 30].filter(n => n <= totalAvailable);
-        if (totalAvailable > 0 && !options.includes(totalAvailable)) {
+        // Offer options: 10, 20, 30, 40 (max 40)
+        const options = [10, 20, 30, 40].filter(n => n <= totalAvailable);
+        if (totalAvailable > 0 && totalAvailable < 40 && !options.includes(totalAvailable)) {
             options.push(totalAvailable);
+            options.sort((a, b) => a - b);
         }
 
         container.innerHTML = options.map(count => `
@@ -245,45 +294,35 @@ const game = {
 
     /**
      * Assign story segments to appear between questions
-     * Story appears approximately every 3-4 questions for immersive experience
+     * Story appears based on progress percentage to match the 9 acts
      */
     assignStorySegments() {
         gameState.storyBetweenQuestions = [];
         const total = gameState.totalQuestions;
         const progressionStories = storySegments.progression;
 
-        // Calculate how many story segments to show (roughly every 3 questions)
-        const storyInterval = 3;
-        let storyIndex = 0;
+        // Map 9 key milestones (10% to 90%)
+        const milestones = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9];
 
-        for (let i = 0; i < total; i++) {
-            // Show story after every 3rd question (starting after question 2)
-            if ((i + 1) % storyInterval === 0 && i < total - 1) {
-                // Pick story based on progress through the game
-                const progressPercent = (i + 1) / total;
+        milestones.forEach((percent, index) => {
+            const questionIndex = Math.floor(total * percent) - 1;
 
-                if (progressPercent < 0.3) {
-                    // Act 1 stories (0-30%)
-                    storyIndex = Math.floor(progressPercent * 10) % 5;
-                } else if (progressPercent < 0.5) {
-                    // Act 2 stories (30-50%)
-                    storyIndex = 5 + Math.floor((progressPercent - 0.3) * 10) % 5;
-                } else if (progressPercent < 0.7) {
-                    // Act 3 stories (50-70%)
-                    storyIndex = 10 + Math.floor((progressPercent - 0.5) * 10) % 5;
-                } else if (progressPercent < 0.9) {
-                    // Act 4 stories (70-90%)
-                    storyIndex = 15 + Math.floor((progressPercent - 0.7) * 10) % 5;
-                } else {
-                    // Climax stories (90%+)
-                    storyIndex = 20 + Math.floor((progressPercent - 0.9) * 10) % 4;
-                }
+            // Ensure valid index and we have a story for this act
+            if (questionIndex >= 0 && questionIndex < total - 1 && index < progressionStories.length) {
+                // If there's already a story there (collision due to small question count), append or move?
+                // For simplicity, just overwrite - later acts take precedence if they collide closely
+                // But better to just find the nearest empty slot?
+                // Actually, let's just place them at exact calculated spots.
 
-                // Ensure we don't exceed array bounds
-                storyIndex = Math.min(storyIndex, progressionStories.length - 1);
-                gameState.storyBetweenQuestions[i] = progressionStories[storyIndex];
+                // Pick a random line from the 3 available for this act
+                // So Act index 'i' (0-8) corresponds to story indices i*3 to i*3+2.
+                const storyBaseIndex = index * 3;
+                const randomOffset = Math.floor(Math.random() * 3);
+                const finalStoryIndex = Math.min(storyBaseIndex + randomOffset, progressionStories.length - 1);
+
+                gameState.storyBetweenQuestions[questionIndex] = progressionStories[finalStoryIndex];
             }
-        }
+        });
     },
 
     /**
@@ -490,27 +529,43 @@ const game = {
         questionAudio.classList.add('hidden');
         questionVideo.classList.add('hidden');
 
-        if (!question.media) return;
+        // Determine audio state
+        let shouldDuck = false;
 
-        // Show image if present
-        if (question.media.image) {
-            questionImage.src = question.media.image;
-            questionImage.classList.remove('hidden');
-            mediaContainer.classList.remove('hidden');
+        if (question.media) {
+            // Show image if present
+            if (question.media.image) {
+                questionImage.src = question.media.image;
+                questionImage.classList.remove('hidden');
+                mediaContainer.classList.remove('hidden');
+            }
+
+            // Show audio if present
+            if (question.media.audio) {
+                questionAudio.src = question.media.audio;
+                questionAudio.classList.remove('hidden');
+                mediaContainer.classList.remove('hidden');
+                questionAudio.onended = () => { if (window.audioManager) window.audioManager.fadeInResume(); };
+                shouldDuck = true;
+            }
+
+            // Show video if present
+            if (question.media.video) {
+                questionVideo.src = question.media.video;
+                questionVideo.classList.remove('hidden');
+                mediaContainer.classList.remove('hidden');
+                questionVideo.onended = () => { if (window.audioManager) window.audioManager.fadeInResume(); };
+                shouldDuck = true;
+            }
         }
 
-        // Show audio if present
-        if (question.media.audio) {
-            questionAudio.src = question.media.audio;
-            questionAudio.classList.remove('hidden');
-            mediaContainer.classList.remove('hidden');
-        }
-
-        // Show video if present
-        if (question.media.video) {
-            questionVideo.src = question.media.video;
-            questionVideo.classList.remove('hidden');
-            mediaContainer.classList.remove('hidden');
+        // Handle Background Audio Logic (Always run this)
+        if (window.audioManager) {
+            if (shouldDuck) {
+                window.audioManager.fadeOutPause();
+            } else {
+                window.audioManager.fadeInResume();
+            }
         }
     },
 
@@ -560,6 +615,7 @@ const game = {
 
         if (isCorrect) {
             gameState.correctAnswers++;
+            gameState.consecutiveWrong = 0; // Reset streak
 
             // Track first-try bonus
             if (isFirstTry) {
@@ -583,9 +639,10 @@ const game = {
                 }
             }, 1500);
         } else {
-            // Wrong answer - penalty
+            // Wrong answer - check penalty
             gameState.currentQuestionAttempts++;
             gameState.wrongAttempts++;
+            gameState.consecutiveWrong++;
 
             const penaltyMessage = gameState.currentQuestionAttempts === 1
                 ? 'The shadows grow stronger... Try again! (-1 penalty)'
@@ -601,9 +658,35 @@ const game = {
                     btn.disabled = false;
                 });
                 feedbackContainer.classList.add('hidden');
-                gameState.isAnswering = false;
+
+                // Check if penalty should trigger (every 2 consecutive wrong)
+                if (gameState.consecutiveWrong > 0 && gameState.consecutiveWrong % 2 === 0) {
+                    this.showPenalty();
+                } else {
+                    gameState.isAnswering = false;
+                }
             }, 1500);
         }
+    },
+
+    showPenalty() {
+        const modal = document.getElementById('penalty-modal');
+        const text = document.getElementById('penalty-text');
+
+        // Pick random penalty
+        const penalty = this.penalties[Math.floor(Math.random() * this.penalties.length)];
+        text.textContent = penalty;
+
+        modal.classList.remove('hidden');
+
+        // Optional: Play alert sound if audio manager exists?
+        // if (window.audioManager) window.audioManager.playEffect('alert'); 
+    },
+
+    closePenalty() {
+        const modal = document.getElementById('penalty-modal');
+        modal.classList.add('hidden');
+        gameState.isAnswering = false; // Allow answering again
     },
 
     /**

@@ -1,0 +1,567 @@
+{
+    "id": "science",
+    "name": "Science",
+    "icon": "\ud83d\udd2c",
+    "questions": [
+        {
+            "id": "sci_01",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the chemical symbol for Gold?",
+            "answers": [
+                "Gd",
+                "Go",
+                "Ag",
+                "Au"
+            ],
+            "correctIndex": 3,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Golden answer!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "sci_02",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which planet is known as the Red Planet?",
+            "answers": [
+                "Venus",
+                "Jupiter",
+                "Mars",
+                "Saturn"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Knowledge from another world!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "sci_03",
+            "enabled": true,
+            "status": "complete",
+            "text": "What serves as the powerhouse of the cell?",
+            "answers": [
+                "Nucleus",
+                "Ribosome",
+                "Mitochondria",
+                "Golgi Apparatus"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Powering through trivia!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "sci_04",
+            "enabled": true,
+            "status": "complete",
+            "text": "What represents the speed of light?",
+            "answers": [
+                "299,792 km/s",
+                "150,000 km/s",
+                "1,000 km/s",
+                "340 m/s"
+            ],
+            "correctIndex": 0,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Enlightening!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "sci_05",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which gas do plants absorb from the atmosphere?",
+            "answers": [
+                "Oxygen",
+                "Nitrogen",
+                "Carbon Dioxide",
+                "Hydrogen"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Photosynthesis of facts!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "sci_06",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the hardest natural substance on Earth?",
+            "answers": [
+                "Gold",
+                "Iron",
+                "Diamond",
+                "Quartz"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Solid as a rock!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "sci_07",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who developed the theory of relativity?",
+            "answers": [
+                "Isaac Newton",
+                "Albert Einstein",
+                "Nikola Tesla",
+                "Galileo Galilei"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Relatively genius!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "sci_08",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the main gas found in the air we breathe?",
+            "answers": [
+                "Oxygen",
+                "Carbon Dioxide",
+                "Nitrogen",
+                "Hydrogen"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "A breath of fresh facts!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "sci_09",
+            "enabled": true,
+            "status": "complete",
+            "text": "What part of the plant conducts photosynthesis?",
+            "answers": [
+                "Root",
+                "Stem",
+                "Leaf",
+                "Flower"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Turning light into knowledge!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "sci_10",
+            "enabled": true,
+            "status": "complete",
+            "text": "How many bones are in the adult human body?",
+            "answers": [
+                "206",
+                "210",
+                "195",
+                "250"
+            ],
+            "correctIndex": 0,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Bone-afide genius!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "sci_11",
+            "enabled": true,
+            "status": "complete",
+            "text": "What acts as the center of an atom?",
+            "answers": [
+                "Electron",
+                "Proton",
+                "Nucleus",
+                "Neutron"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Core knowledge!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "sci_12",
+            "enabled": true,
+            "status": "complete",
+            "text": "What force keeps us on the ground?",
+            "answers": [
+                "Magnetism",
+                "Friction",
+                "Gravity",
+                "Inertia"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Grounded in facts!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "sci_13",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which organ pumps blood throughout the body?",
+            "answers": [
+                "Brain",
+                "Lungs",
+                "Heart",
+                "Liver"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Heart-stopping trivia!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "sci_14",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is H2O more commonly known as?",
+            "answers": [
+                "Salt",
+                "Sugar",
+                "Water",
+                "Acid"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Fluid intelligence!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "sci_15",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which planet is closest to the Sun?",
+            "answers": [
+                "Venus",
+                "Earth",
+                "Mercury",
+                "Mars"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Hot on the trail of truth!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "sci_16",
+            "enabled": true,
+            "status": "complete",
+            "text": "What type of animal breathes through gills?",
+            "answers": [
+                "Reptiles",
+                "Birds",
+                "Fish",
+                "Mammals"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Swimming in knowledge!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "sci_17",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the largest organ in the human body?",
+            "answers": [
+                "Liver",
+                "Brain",
+                "Skin",
+                "Heart"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "You've got this covered!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "sci_18",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the process by which a caterpillar turns into a butterfly?",
+            "answers": [
+                "Evolution",
+                "Metamorphosis",
+                "Photosynthesis",
+                "Germination"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Changing for the better!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "sci_19",
+            "enabled": true,
+            "status": "complete",
+            "text": "What element fuels the sun?",
+            "answers": [
+                "Helium",
+                "Hydrogen",
+                "Carbon",
+                "Oxygen"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Burning bright with answers!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "sci_20",
+            "enabled": true,
+            "status": "complete",
+            "text": "How many teeth does an adult human typically have?",
+            "answers": [
+                "28",
+                "30",
+                "32",
+                "34"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Chewing on the facts!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        }
+    ]
+}

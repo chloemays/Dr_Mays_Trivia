@@ -1,0 +1,37 @@
+[
+    {
+        "id": "synth_sage",
+        "name": "Synth the Sage",
+        "class": "Wizard",
+        "imagePath": "assets/characters/synth_sage.png",
+        "bio": "An ancient scholar who channels knowledge through synthwave magic"
+    },
+    {
+        "id": "blaze_ryder",
+        "name": "Blaze Ryder",
+        "class": "Rogue",
+        "imagePath": "assets/characters/blaze_ryder.png",
+        "bio": "A quick-witted thief who solves problems with style"
+    },
+    {
+        "id": "harmony_valor",
+        "name": "Harmony Valor",
+        "class": "Paladin",
+        "imagePath": "assets/characters/harmony_valor.png",
+        "bio": "A noble warrior whose strength comes from 80s power ballads"
+    },
+    {
+        "id": "whiskers_mcfluff",
+        "name": "Whiskers McFluff",
+        "class": "Ranger",
+        "imagePath": "assets/characters/whiskers_mcfluff.png",
+        "bio": "A feline archer with supernatural perception"
+    },
+    {
+        "id": "melody_rose",
+        "name": "Melody Rose",
+        "class": "Bard",
+        "imagePath": "assets/characters/melody_rose.png",
+        "bio": "A rockstar whose music literally changes reality"
+    }
+]

@@ -1,0 +1,847 @@
+{
+    "id": "cats",
+    "name": "Cat Expertise",
+    "icon": "\ud83d\udc31",
+    "questions": [
+        {
+            "id": "cats_01",
+            "enabled": true,
+            "status": "complete",
+            "text": "What breed of cat is known for its folded ears?",
+            "answers": [
+                "Scottish Fold",
+                "Persian",
+                "Siamese",
+                "Maine Coon"
+            ],
+            "correctIndex": 0,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "The guardian cat spirit nods in approval. You truly understand the feline ways!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-18"
+        },
+        {
+            "id": "cats_02",
+            "enabled": true,
+            "status": "complete",
+            "text": "How many hours per day does the average cat sleep?",
+            "answers": [
+                "8-10 hours",
+                "12-16 hours",
+                "6-8 hours",
+                "18-20 hours"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "The mystical cat oracle purrs with delight at your wisdom!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-18"
+        },
+        {
+            "id": "cats_03",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is a group of cats called?",
+            "answers": [
+                "A pack",
+                "A clowder",
+                "A herd",
+                "A pride"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Ancient feline knowledge flows through you!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-18"
+        },
+        {
+            "id": "cats_04",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the term for a cat's sandpaper-like tongue surface?",
+            "answers": [
+                "Papillae",
+                "Whiskers",
+                "Barbs",
+                "Filaments"
+            ],
+            "correctIndex": 0,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "The secrets of cat anatomy are revealed to you!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-18"
+        },
+        {
+            "id": "cats_05",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the average lifespan of an indoor cat?",
+            "answers": [
+                "5-8 years",
+                "10-15 years",
+                "15-20 years",
+                "20-25 years"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Your bond with the feline spirits grows stronger!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-18"
+        },
+        {
+            "id": "cats_06",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the largest breed of domestic cat?",
+            "answers": [
+                "Siamese",
+                "Persian",
+                "Maine Coon",
+                "Bengal"
+            ],
+            "correctIndex": 2,
+            "storyProgression": "Big cat energy!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cats_07",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the technical term for a hairball?",
+            "answers": [
+                "Trichobezoar",
+                "Folliculus",
+                "Pilus",
+                "Cataract"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "A hairy situation solved!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cats_08",
+            "enabled": true,
+            "status": "complete",
+            "text": "How many toes does a cat usually have on its front paws?",
+            "answers": [
+                "4",
+                "5",
+                "6",
+                "3"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "High five!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cats_09",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which sense is most developed in cats at birth?",
+            "answers": [
+                "Sight",
+                "Hearing",
+                "Smell",
+                "Touch"
+            ],
+            "correctIndex": 2,
+            "storyProgression": "You sniffed out the right answer!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cats_10",
+            "enabled": true,
+            "status": "complete",
+            "text": "What allows cats to land on their feet?",
+            "answers": [
+                "Tail balance",
+                "Righting reflex",
+                "Soft paws",
+                "Low gravity"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Landing the answer perfectly!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cats_11",
+            "enabled": true,
+            "status": "complete",
+            "text": "Can cats taste sweetness?",
+            "answers": [
+                "Yes, very well",
+                "No, they lack the receptors",
+                "Only in milk",
+                "Only in fruit"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Sweet success!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cats_12",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is a female cat called?",
+            "answers": [
+                "Tom",
+                "Queen",
+                "Empress",
+                "Lady"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Royal knowledge!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cats_13",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is a male cat called?",
+            "answers": [
+                "Tom",
+                "King",
+                "Duke",
+                "Sire"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Top Tom!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cats_14",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which cat breed has no tail?",
+            "answers": [
+                "Manx",
+                "Bobtail",
+                "Sphynx",
+                "Ragdoll"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "No tail, no fail!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cats_15",
+            "enabled": true,
+            "status": "complete",
+            "text": "What percent of their lives do cats spend grooming?",
+            "answers": [
+                "10-15%",
+                "30-50%",
+                "60-70%",
+                "5-10%"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Clean sweep!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cats_16",
+            "enabled": true,
+            "status": "complete",
+            "text": "How many vocal sounds can cats make?",
+            "answers": [
+                "Over 100",
+                "About 10",
+                "About 50",
+                "Over 500"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "You're speaking their language!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cats_17",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which country considered cats sacred?",
+            "answers": [
+                "Ancient Rome",
+                "Ancient China",
+                "Ancient Egypt",
+                "Ancient Greece"
+            ],
+            "correctIndex": 2,
+            "storyProgression": "Worship worthy wisdom!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cats_18",
+            "enabled": true,
+            "status": "complete",
+            "text": "Do cats have collarbones?",
+            "answers": [
+                "Yes, similar to humans",
+                "No, none at all",
+                "Yes, but they are free-floating",
+                "Only wild cats do"
+            ],
+            "correctIndex": 2,
+            "storyProgression": "Flexible thinking!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cats_19",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is catnip?",
+            "answers": [
+                "A type of meat",
+                "A toy",
+                "A herb from the mint family",
+                "A mineral"
+            ],
+            "correctIndex": 2,
+            "storyProgression": "Minty fresh facts!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cats_20",
+            "enabled": true,
+            "status": "complete",
+            "text": "Are cats lactose intolerant?",
+            "answers": [
+                "No, they love milk",
+                "Yes, most adult cats are",
+                "Only kittens are",
+                "It depends on the breed"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Milking the knowledge!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cats_21",
+            "enabled": true,
+            "status": "complete",
+            "text": "What allows cats to see in the dark?",
+            "answers": [
+                "Tapetum lucidum",
+                "Night vision goggles",
+                "Extra rods only",
+                "Wide pupils only"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Seeing the light (in the dark)!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cats_22",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the fastest domestic cat breed?",
+            "answers": [
+                "Siamese",
+                "Egyptian Mau",
+                "Abyssinian",
+                "Bengal"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Speedy answer!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cats_23",
+            "enabled": true,
+            "status": "complete",
+            "text": "How high can a cat jump?",
+            "answers": [
+                "2 times their height",
+                "4 times their height",
+                "6 times their height",
+                "10 times their height"
+            ],
+            "correctIndex": 2,
+            "storyProgression": "Leaping to conclusions correctly!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cats_24",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is a polydactyl cat?",
+            "answers": [
+                "A cat with no claws",
+                "A cat with extra toes",
+                "A cat with two tails",
+                "A flying cat"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "More toes to tap in the answer!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cats_25",
+            "enabled": true,
+            "status": "complete",
+            "text": "What does a cat's tail wagging usually mean?",
+            "answers": [
+                "Happiness",
+                "Submission",
+                "Agitation/Irritation",
+                "Hunger"
+            ],
+            "correctIndex": 2,
+            "storyProgression": "Reading the signs!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cats_26",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who is the most famous cartoon cat?",
+            "answers": [
+                "Garfield",
+                "Felix",
+                "Tom",
+                "Sylvester"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "I hate Mondays but I love correct answers!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cats_27",
+            "enabled": true,
+            "status": "complete",
+            "text": "Can cats get sunburned?",
+            "answers": [
+                "No, fur protects them",
+                "Yes, especially light colored ones",
+                "Only on their nose",
+                "Never"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Sun smart!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cats_28",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the range of a cat's hearing compared to humans?",
+            "answers": [
+                "Lower",
+                "Same",
+                "Much higher",
+                "Slightly higher"
+            ],
+            "correctIndex": 2,
+            "storyProgression": "I hear victory!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cats_29",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the texture of a cat's nose similar to?",
+            "answers": [
+                "Sandpaper",
+                "Velvet",
+                "Leather",
+                "A fingerprint"
+            ],
+            "correctIndex": 3,
+            "storyProgression": "Unique answer!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cats_30",
+            "enabled": true,
+            "status": "complete",
+            "text": "Why do cats knead?",
+            "answers": [
+                "Sharpen claws",
+                "Mark territory",
+                "Comfort/Nursing behavior",
+                "Create a bed"
+            ],
+            "correctIndex": 2,
+            "storyProgression": "Kneaded knowledge!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        }
+    ]
+}

@@ -1,0 +1,707 @@
+{
+    "id": "psychiatry",
+    "name": "Psychiatry",
+    "icon": "\ud83e\udde0",
+    "questions": [
+        {
+            "id": "psychiatry_01",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who is considered the father of psychoanalysis?",
+            "answers": [
+                "Carl Jung",
+                "B.F. Skinner",
+                "Sigmund Freud",
+                "Ivan Pavlov"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Your understanding of the human mind illuminates the darkness!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-18"
+        },
+        {
+            "id": "psychiatry_02",
+            "enabled": true,
+            "status": "complete",
+            "text": "What does CBT stand for in psychotherapy?",
+            "answers": [
+                "Cognitive Behavioral Therapy",
+                "Clinical Brain Treatment",
+                "Comprehensive Behavioral Training",
+                "Counseling Based Techniques"
+            ],
+            "correctIndex": 0,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Your therapeutic wisdom brings healing to the realm!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-18"
+        },
+        {
+            "id": "psychiatry_03",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which neurotransmitter is often called the 'feel-good' chemical?",
+            "answers": [
+                "Adrenaline",
+                "Dopamine",
+                "Cortisol",
+                "Acetylcholine"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "The ancient healers recognize your knowledge of the mind!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-18"
+        },
+        {
+            "id": "psychiatry_04",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is extreme fear of spiders called?",
+            "answers": [
+                "Agoraphobia",
+                "Arachnophobia",
+                "Claustrophobia",
+                "Acrophobia"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Fear conquered!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "psychiatry_05",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who developed the Hierarchy of Needs?",
+            "answers": [
+                "Abraham Maslow",
+                "Carl Rogers",
+                "Jean Piaget",
+                "Erik Erikson"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Self-actualization achieved!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "psychiatry_06",
+            "enabled": true,
+            "status": "complete",
+            "text": "What test uses inkblots to analyze personality?",
+            "answers": [
+                "MMPI",
+                "Rorschach Test",
+                "Thematic Apperception Test",
+                "Myers-Briggs"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "I see a correct answer!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "psychiatry_07",
+            "enabled": true,
+            "status": "complete",
+            "text": "What was Bipolar Disorder previously known as?",
+            "answers": [
+                "Schizophrenia",
+                "Manic Depression",
+                "Borderline Personality",
+                "Anxiety Disorder"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Understanding brought to light!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "psychiatry_08",
+            "enabled": true,
+            "status": "complete",
+            "text": "What does SSRI stand for?",
+            "answers": [
+                "Selective Serotonin Reuptake Inhibitor",
+                "Systemic Serotonin Release Initiator",
+                "Standard Stress Reduction Intervention",
+                "Simple Sleep Restoration Index"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Chemistry of the mind mastered!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "psychiatry_09",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which part of the brain is associated with fear?",
+            "answers": [
+                "Hippocampus",
+                "Amygdala",
+                "Cerebellum",
+                "Frontal Lobe"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "No fear here!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "psychiatry_10",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the fear of open spaces called?",
+            "answers": [
+                "Claustrophobia",
+                "Agoraphobia",
+                "Hydrophobia",
+                "Xenophobia"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Open to new knowledge!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "psychiatry_11",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who is famous for the experiment with salivating dogs?",
+            "answers": [
+                "Skinner",
+                "Watson",
+                "Pavlov",
+                "Thorndike"
+            ],
+            "correctIndex": 2,
+            "storyProgression": "Ring the bell! Correct!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "psychiatry_12",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the DSM?",
+            "answers": [
+                "Diagnostic and Statistical Manual",
+                "Doctor's Standard Method",
+                "Daily Symptom Monitor",
+                "Direct Service Model"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "By the book!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "psychiatry_13",
+            "enabled": true,
+            "status": "complete",
+            "text": "What chemical imbalance is often associated with depression?",
+            "answers": [
+                "Serotonin",
+                "Insulin",
+                "Adrenaline",
+                "Testosterone"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Balanced thinking!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "psychiatry_14",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the term for a false belief held despite evidence to the contrary?",
+            "answers": [
+                "Hallucination",
+                "Delusion",
+                "Illusion",
+                "Obsession"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Reality check passed!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "psychiatry_15",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who developed the stages of cognitive development?",
+            "answers": [
+                "Jean Piaget",
+                "Sigmund Freud",
+                "Erik Erikson",
+                "Lev Vygotsky"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Developing wisdom!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "psychiatry_16",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the fear of heights called?",
+            "answers": [
+                "Acrophobia",
+                "Aerophobia",
+                "Altophobia",
+                "Arachnophobia"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Reaching new heights!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "psychiatry_17",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the most common eating disorder?",
+            "answers": [
+                "Anorexia",
+                "Bulimia",
+                "Binge Eating Disorder",
+                "Pica"
+            ],
+            "correctIndex": 2,
+            "storyProgression": "Feeding the mind!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "psychiatry_18",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which therapy focuses on unconscious processes?",
+            "answers": [
+                "Psychoanalysis",
+                "Behaviorism",
+                "Humanism",
+                "Cognitivism"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Unlocking the unconscious!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "psychiatry_19",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the placebo effect?",
+            "answers": [
+                "Real improvement from fake treatment",
+                "Side effect of medication",
+                "Worsening symptoms",
+                "No effect"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Believing is achieving!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "psychiatry_20",
+            "enabled": true,
+            "status": "complete",
+            "text": "What does ADHD stand for?",
+            "answers": [
+                "Attention Deficit Hyperactivity Disorder",
+                "Advanced Development Human Design",
+                "Active Disorder High Direction",
+                "Another Day Having Dinner"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Focused success!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "psychiatry_21",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which famous case study involved a metal rod through the skull?",
+            "answers": [
+                "Phineas Gage",
+                "Little Albert",
+                "H.M.",
+                "Anna O."
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Mind-blowing knowledge!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "psychiatry_22",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the fear of public speaking called?",
+            "answers": [
+                "Glossophobia",
+                "Social Anxiety",
+                "Stage Fright",
+                "All of the above"
+            ],
+            "correctIndex": 3,
+            "storyProgression": "Speaking your truth!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "psychiatry_23",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who is known for the Little Albert experiment?",
+            "answers": [
+                "John B. Watson",
+                "B.F. Skinner",
+                "Sigmund Freud",
+                "Carl Jung"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Conditioned for success!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "psychiatry_24",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the term for 'talking cure'?",
+            "answers": [
+                "Psychotherapy",
+                "Medication",
+                "Surgery",
+                "Hypnosis"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Talking your way to the top!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "psychiatry_25",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which disorder involves multiple distinct personalities?",
+            "answers": [
+                "DID",
+                "Schizophrenia",
+                "Bipolar",
+                "Narcissism"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Integrated knowledge!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        }
+    ]
+}

@@ -1,0 +1,707 @@
+{
+    "id": "cooking",
+    "name": "Cooking",
+    "icon": "\ud83c\udf73",
+    "questions": [
+        {
+            "id": "cooking_01",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the technique called when you cook food briefly in boiling water, then plunge it into ice water?",
+            "answers": [
+                "Braising",
+                "Blanching",
+                "Saut\u00e9ing",
+                "Poaching"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "The culinary spirits are impressed by your kitchen knowledge!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-18"
+        },
+        {
+            "id": "cooking_02",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the primary ingredient in a traditional roux?",
+            "answers": [
+                "Butter and flour",
+                "Eggs and cream",
+                "Oil and cornstarch",
+                "Milk and cheese"
+            ],
+            "correctIndex": 0,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Master Chef skills unlocked! The feast will be legendary!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-18"
+        },
+        {
+            "id": "cooking_03",
+            "enabled": true,
+            "status": "complete",
+            "text": "What temperature (Fahrenheit) is considered 'room temperature' for baking ingredients?",
+            "answers": [
+                "55-60\u00b0F",
+                "65-70\u00b0F",
+                "75-80\u00b0F",
+                "85-90\u00b0F"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "The perfect temperature for perfect wisdom!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-18"
+        },
+        {
+            "id": "cooking_04",
+            "enabled": true,
+            "status": "complete",
+            "text": "What does 'mise en place' mean in cooking?",
+            "answers": [
+                "Presentation style",
+                "Everything in its place",
+                "Quick cooking",
+                "Slow simmer"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Organization is the key to culinary excellence! And trivia mastery!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-18"
+        },
+        {
+            "id": "cooking_05",
+            "enabled": true,
+            "status": "complete",
+            "text": "What scale measures the spiciness of peppers?",
+            "answers": [
+                "Richter",
+                "Scoville",
+                "Kelvin",
+                "Beaufort"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Bringing the heat!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cooking_06",
+            "enabled": true,
+            "status": "complete",
+            "text": "What flower does Saffron come from?",
+            "answers": [
+                "Rose",
+                "Crocus",
+                "Lily",
+                "Daisy"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Precious knowledge!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cooking_07",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the main ingredient in Hummus?",
+            "answers": [
+                "Lentils",
+                "Chickpeas",
+                "Black Beans",
+                "Peas"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Smooth answer!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cooking_08",
+            "enabled": true,
+            "status": "complete",
+            "text": "What does 'Al Dente' mean?",
+            "answers": [
+                "To the tooth",
+                "Soft",
+                "Overcooked",
+                "Raw"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Perfectly cooked answer!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cooking_09",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is Tofu made from?",
+            "answers": [
+                "Rice",
+                "Soybeans",
+                "Wheat",
+                "Almonds"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Soy smart!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cooking_10",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the main ingredient in Guacamole?",
+            "answers": [
+                "Tomato",
+                "Avocado",
+                "Onion",
+                "Pepper"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Holy Guacamole! Correct!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cooking_11",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which vitamin provides energy?",
+            "answers": [
+                "Vitamin A",
+                "Vitamin B12",
+                "Vitamin C",
+                "Vitamin D"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Energized mind!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cooking_12",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is a 'bain-marie'?",
+            "answers": [
+                "A type of knife",
+                "A water bath",
+                "A sauce",
+                "A pastry"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Warm reception for that answer!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cooking_13",
+            "enabled": true,
+            "status": "complete",
+            "text": "What creates the holes in Swiss cheese?",
+            "answers": [
+                "Mice",
+                "Bacteria releasing gas",
+                "Drills",
+                "Mold"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Holy cheese Batman, you got it!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cooking_14",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the most expensive spice?",
+            "answers": [
+                "Vanilla",
+                "Saffron",
+                "Cardamom",
+                "Cinnamon"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Rich in knowledge!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cooking_15",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is a 'zest'?",
+            "answers": [
+                "Juice",
+                "Outer peel of citrus",
+                "Inner pulp",
+                "Seeds"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Zest for life and trivia!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cooking_16",
+            "enabled": true,
+            "status": "complete",
+            "text": "What causes bread to rise?",
+            "answers": [
+                "Yeast",
+                "Sugar",
+                "Salt",
+                "Water"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Rising to the occasion!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cooking_17",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the main ingredient in Pesto?",
+            "answers": [
+                "Spinach",
+                "Parsley",
+                "Basil",
+                "Cilantro"
+            ],
+            "correctIndex": 2,
+            "storyProgression": "Green with envy at your skills!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cooking_18",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is a 'reduction'?",
+            "answers": [
+                "Cutting food smaller",
+                "Thickening liquid by boiling",
+                "Reducing heat",
+                "Removing fat"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Distilled wisdom!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cooking_19",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which fruit has seeds on the outside?",
+            "answers": [
+                "Raspberry",
+                "Srawberry",
+                "Blueberry",
+                "Blackberry"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Berry good!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cooking_20",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the main ingredient in 'Meringue'?",
+            "answers": [
+                "Cream",
+                "Egg Whites",
+                "Butter",
+                "Flour"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Light and fluffy victory!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cooking_21",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is 'Tempura'?",
+            "answers": [
+                "A soup",
+                "Battered and fried",
+                "Steamed",
+                "Raw"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Crispy correct answer!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cooking_22",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is 'Ceviche' cooked in?",
+            "answers": [
+                "Oil",
+                "Citrus Juice",
+                "Water",
+                "Milk"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Fresh knowledge!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cooking_23",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the difference between jam and jelly?",
+            "answers": [
+                "Sugar content",
+                "Fruit pieces (Jam) vs Juice (Jelly)",
+                "Color",
+                "Jar shape"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Sweet distinction!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cooking_24",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the national dish of Spain?",
+            "answers": [
+                "Tacos",
+                "Paella",
+                "Pasta",
+                "Pizza"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Deliciously correct!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "cooking_25",
+            "enabled": true,
+            "status": "complete",
+            "text": "What does '\u00e0 la mode' mean?",
+            "answers": [
+                "With cheese",
+                "With ice cream",
+                "On the side",
+                "Fried"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "The cherry on top!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        }
+    ]
+}

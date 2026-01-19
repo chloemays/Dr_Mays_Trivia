@@ -1,0 +1,16 @@
+{
+    "metadata": "assets/config/metadata.json",
+    "characters": "assets/config/characters.json",
+    "categories": [
+        "assets/config/categories/math.json",
+        "assets/config/categories/cats.json",
+        "assets/config/categories/musicals.json",
+        "assets/config/categories/music80s.json",
+        "assets/config/categories/psychiatry.json",
+        "assets/config/categories/baseball.json",
+        "assets/config/categories/cooking.json",
+        "assets/config/categories/geography.json",
+        "assets/config/categories/science.json",
+        "assets/config/categories/movies.json"
+    ]
+}

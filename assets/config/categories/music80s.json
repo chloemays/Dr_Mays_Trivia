@@ -1,0 +1,847 @@
+{
+    "id": "music80s",
+    "name": "70s/80s Music",
+    "icon": "\ud83c\udfb8",
+    "questions": [
+        {
+            "id": "music80s_01",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which band released 'Take On Me' in 1985?",
+            "answers": [
+                "Duran Duran",
+                "a-ha",
+                "Depeche Mode",
+                "Tears for Fears"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "The synthwave spirits recognize a true child of the 80s!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-18"
+        },
+        {
+            "id": "music80s_02",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who sang 'Bohemian Rhapsody'?",
+            "answers": [
+                "Led Zeppelin",
+                "The Rolling Stones",
+                "Queen",
+                "Pink Floyd"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Rock legends salute your musical knowledge!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-18"
+        },
+        {
+            "id": "music80s_03",
+            "enabled": true,
+            "status": "complete",
+            "text": "What year was Michael Jackson's 'Thriller' album released?",
+            "answers": [
+                "1980",
+                "1982",
+                "1984",
+                "1986"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "The King of Pop's legacy shines through your knowledge!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-18"
+        },
+        {
+            "id": "music80s_04",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which band recorded 'Don't Stop Believin''?",
+            "answers": [
+                "Boston",
+                "Foreigner",
+                "Journey",
+                "Styx"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Hold on to that feeling - of being a trivia champion!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-18"
+        },
+        {
+            "id": "music80s_05",
+            "enabled": true,
+            "status": "complete",
+            "text": "What was Prince's breakthrough album released in 1984?",
+            "answers": [
+                "1999",
+                "Purple Rain",
+                "Sign o' the Times",
+                "Dirty Mind"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Purple rain falls upon the realm, cleansing the shadows!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-18"
+        },
+        {
+            "id": "music80s_06",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who sang the 'Ghostbusters' theme song?",
+            "answers": [
+                "Ray Parker Jr.",
+                "Huey Lewis",
+                "Kenny Loggins",
+                "Phil Collins"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Who you gonna call? You!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "music80s_07",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which duo released 'Sweet Dreams (Are Made of This)'?",
+            "answers": [
+                "Yazoo",
+                "Eurythmics",
+                "Erasure",
+                "Pet Shop Boys"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Sweet dreams are made of correct answers!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "music80s_08",
+            "enabled": true,
+            "status": "complete",
+            "text": "What year was Madonna's 'Like a Virgin' released?",
+            "answers": [
+                "1983",
+                "1984",
+                "1985",
+                "1986"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Touched for the very first time... with knowledge!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "music80s_09",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which band recorded 'Eye of the Tiger'?",
+            "answers": [
+                "Journey",
+                "Europe",
+                "Survivor",
+                "Foreigner"
+            ],
+            "correctIndex": 2,
+            "storyProgression": "Rising up to the challenge!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "music80s_10",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who sang 'Careless Whisper'?",
+            "answers": [
+                "George Michael",
+                "Elton John",
+                "Boy George",
+                "Durran Durran"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Guilty feet have got no rhythm, but you have the answer!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "music80s_11",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which song starts with 'Just a small town girl'?",
+            "answers": [
+                "Don't Stop Believin'",
+                "Livin' on a Prayer",
+                "Total Eclipse of the Heart",
+                "Material Girl"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Taking the midnight train to victory!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "music80s_12",
+            "enabled": true,
+            "status": "complete",
+            "text": "What was the biggest selling single of the 1980s?",
+            "answers": [
+                "Do They Know It's Christmas?",
+                "Physical",
+                "Bette Davis Eyes",
+                "Eye of the Tiger"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Let's get physical (with trivia)!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "music80s_13",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who sang 'Girls Just Want to Have Fun'?",
+            "answers": [
+                "Madonna",
+                "Cyndi Lauper",
+                "Tiffany",
+                "Debbie Gibson"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "They just wanna have correct answers!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "music80s_14",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which band released the album 'The Joshua Tree'?",
+            "answers": [
+                "R.E.M.",
+                "The Police",
+                "U2",
+                "Simple Minds"
+            ],
+            "correctIndex": 2,
+            "storyProgression": "I still haven't found what I'm looking for... wait, yes I have, the answer!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "music80s_15",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the name of the lead singer of The Police?",
+            "answers": [
+                "Bono",
+                "Sting",
+                "Edge",
+                "Prince"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Every breath you take, I'll be watching you (answer correctly)!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "music80s_16",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which video was the first to be played on MTV?",
+            "answers": [
+                "Video Killed the Radio Star",
+                "Money for Nothing",
+                "Take On Me",
+                "Thriller"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Video killed the radio star, but you saved the day!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "music80s_17",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who sang 'I Wanna Dance with Somebody'?",
+            "answers": [
+                "Whitney Houston",
+                "Janet Jackson",
+                "Mariah Carey",
+                "Paula Abdul"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "I wanna feel the heat with somebody (who knows trivia)!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "music80s_18",
+            "enabled": true,
+            "status": "complete",
+            "text": "What song contains the lyric 'Tommy used to work on the docks'?",
+            "answers": [
+                "Livin' on a Prayer",
+                "Born in the USA",
+                "Summer of 69",
+                "Jessie's Girl"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "We're halfway there!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "music80s_19",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which artist released the album 'Born in the U.S.A.'?",
+            "answers": [
+                "Bruce Springsteen",
+                "John Mellencamp",
+                "Tom Petty",
+                "Bob Dylan"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Born to run (this game)!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "music80s_20",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who sang 'Walking on Sunshine'?",
+            "answers": [
+                "The Bangles",
+                "Katrina and the Waves",
+                "The Go-Go's",
+                "Bananarama"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "I'm walking on sunshine, whoa!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "music80s_21",
+            "enabled": true,
+            "status": "complete",
+            "text": "What band is known for 'Hungry Like the Wolf'?",
+            "answers": [
+                "Duran Duran",
+                "Spandau Ballet",
+                "Culture Club",
+                "Wham!"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Hungry for knowledge!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "music80s_22",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who had a hit with 'Time After Time'?",
+            "answers": [
+                "Cyndi Lauper",
+                "Madonna",
+                "Tina Turner",
+                "Pat Benatar"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "If you're lost, you can look and you will find (the answer)!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "music80s_23",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which song features the line 'It's a nice day for a white wedding'?",
+            "answers": [
+                "White Wedding",
+                "Rebel Yell",
+                "Dancing with Myself",
+                "Eyes Without a Face"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Start again!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "music80s_24",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the name of Michael Jackson's chimp?",
+            "answers": [
+                "Bubbles",
+                "BoBo",
+                "Bananas",
+                "Bingo"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Monkeying around with correct answers!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "music80s_25",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who sang 'Every Rose Has Its Thorn'?",
+            "answers": [
+                "Guns N' Roses",
+                "Poison",
+                "Bon Jovi",
+                "Motley Crue"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Every night has its dawn (and correct answer)!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "music80s_26",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which band sang 'Africa'?",
+            "answers": [
+                "Toto",
+                "Journey",
+                "Foreigner",
+                "Asia"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "I bless the rains down in Africa!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "music80s_27",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who performed 'Under Pressure' with Queen?",
+            "answers": [
+                "David Bowie",
+                "Mick Jagger",
+                "Elton John",
+                "George Michael"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Pressure pushing down on me? No way!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "music80s_28",
+            "enabled": true,
+            "status": "complete",
+            "text": "What song is known for the line 'Pour some sugar on me'?",
+            "answers": [
+                "Pour Some Sugar on Me",
+                "Sweet Child o' Mine",
+                "Cherry Pie",
+                "Photograph"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Sweet victory!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "music80s_29",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who sang 'Hit Me With Your Best Shot'?",
+            "answers": [
+                "Pat Benatar",
+                "Joan Jett",
+                "Lita Ford",
+                "Stevie Nicks"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Fire away!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "music80s_30",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which song by The B-52's features a 'tin roof, rusted'?",
+            "answers": [
+                "Love Shack",
+                "Roam",
+                "Rock Lobster",
+                "Private Idaho"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Bang bang on the door baby!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        }
+    ]
+}

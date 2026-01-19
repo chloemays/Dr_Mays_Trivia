@@ -1,0 +1,36 @@
+{
+    "tracks": [
+        {
+            "title": "Neon Odyssey",
+            "src": "assets/background_audio_clean/neon_odyssey_399913.mp3"
+        },
+        {
+            "title": "Love Robots",
+            "src": "assets/background_audio_clean/love_robots_332942.mp3"
+        },
+        {
+            "title": "Intergalactic Space",
+            "src": "assets/background_audio_clean/intergalactic_space_23014.mp3"
+        },
+        {
+            "title": "Ghost Coast 2030",
+            "src": "assets/background_audio_clean/ghost_coast_2030_20822.mp3"
+        },
+        {
+            "title": "Future Desert",
+            "src": "assets/background_audio_clean/future_desert_300633.mp3"
+        },
+        {
+            "title": "Farewell To Eden",
+            "src": "assets/background_audio_clean/farewell_to_eden_chiptune_retrowave_80s_videogame_arcade_144377.mp3"
+        },
+        {
+            "title": "Bitstream Dreams",
+            "src": "assets/background_audio_clean/bitstream_dreams_389906.mp3"
+        },
+        {
+            "title": "A Hero Of The 80s",
+            "src": "assets/background_audio_clean/a_hero_of_the_80s_126684.mp3"
+        }
+    ]
+}

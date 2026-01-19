@@ -1,0 +1,567 @@
+{
+    "id": "geography",
+    "name": "Geography",
+    "icon": "\ud83c\udf0d",
+    "questions": [
+        {
+            "id": "geo_01",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the capital of Australia?",
+            "answers": [
+                "Sydney",
+                "Melbourne",
+                "Canberra",
+                "Perth"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Your knowledge spans the globe!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "geo_02",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which is the longest river in the world?",
+            "answers": [
+                "Amazon",
+                "Nile",
+                "Yangtze",
+                "Mississippi"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Flowing with wisdom!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "geo_03",
+            "enabled": true,
+            "status": "complete",
+            "text": "Mount Everest is located in which mountain range?",
+            "answers": [
+                "Andes",
+                "Rockies",
+                "Alps",
+                "Himalayas"
+            ],
+            "correctIndex": 3,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "You've reached the peak of knowledge!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "geo_04",
+            "enabled": true,
+            "status": "complete",
+            "text": "What acts as the border between England and Scotland?",
+            "answers": [
+                "The Tweed",
+                "The Severn",
+                "The Thames",
+                "The Avon"
+            ],
+            "correctIndex": 0,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Crossing borders of ignorance!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "geo_05",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which continent is the Sahara Desert located in?",
+            "answers": [
+                "Asia",
+                "South America",
+                "Africa",
+                "Australia"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Hot knowledge coming through!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "geo_06",
+            "enabled": true,
+            "status": "complete",
+            "text": "What country has the largest population in the world?",
+            "answers": [
+                "India",
+                "China",
+                "USA",
+                "Indonesia"
+            ],
+            "correctIndex": 0,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "A crowd of correct answers!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "geo_07",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the smallest country in the world?",
+            "answers": [
+                "Monaco",
+                "Vatican City",
+                "San Marino",
+                "Liechtenstein"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Small but mighty wisdom!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "geo_08",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which U.S. state is known as the Sunshine State?",
+            "answers": [
+                "California",
+                "Florida",
+                "Texas",
+                "Hawaii"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Bright and sunny correct answer!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "geo_09",
+            "enabled": true,
+            "status": "complete",
+            "text": "What serves as the capital of Japan?",
+            "answers": [
+                "Kyoto",
+                "Osaka",
+                "Tokyo",
+                "Hiroshima"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Big city knowledge!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "geo_10",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which ocean is the largest?",
+            "answers": [
+                "Atlantic",
+                "Indian",
+                "Arctic",
+                "Pacific"
+            ],
+            "correctIndex": 3,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Deep ocean wisdom!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "geo_11",
+            "enabled": true,
+            "status": "complete",
+            "text": "In which country would you find Machu Picchu?",
+            "answers": [
+                "Chile",
+                "Peru",
+                "Brazil",
+                "Argentina"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Ancient wisdom revealed!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "geo_12",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the capital of Canada?",
+            "answers": [
+                "Toronto",
+                "Vancouver",
+                "Montreal",
+                "Ottawa"
+            ],
+            "correctIndex": 3,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Northern lights of knowledge!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "geo_13",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which river flows through London?",
+            "answers": [
+                "Seine",
+                "Thames",
+                "Danube",
+                "Rhine"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Flowing straight to the answer!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "geo_14",
+            "enabled": true,
+            "status": "complete",
+            "text": "What country is home to the Kangaroo?",
+            "answers": [
+                "New Zealand",
+                "South Africa",
+                "Australia",
+                "Austria"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Hopping to the right conclusion!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "geo_15",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which state is the Grand Canyon located in?",
+            "answers": [
+                "Nevada",
+                "Utah",
+                "Arizona",
+                "Colorado"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Grand knowledge!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "geo_16",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the longest river in Europe?",
+            "answers": [
+                "Danube",
+                "Volga",
+                "Rhine",
+                "Elbe"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "A river of correct answers!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "geo_17",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which country has the most islands?",
+            "answers": [
+                "Philippines",
+                "Indonesia",
+                "Sweden",
+                "Canada"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "An archipelago of facts!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "geo_18",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the capital of Egypt?",
+            "answers": [
+                "Alexandria",
+                "Cairo",
+                "Giza",
+                "Luxor"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Pyramid scheme of success!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "geo_19",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which US state is the largest by area?",
+            "answers": [
+                "Texas",
+                "California",
+                "Alaska",
+                "Montana"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Massive knowledge!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "geo_20",
+            "enabled": true,
+            "status": "complete",
+            "text": "What serves as the line of 0 degrees longitude?",
+            "answers": [
+                "Equator",
+                "Prime Meridian",
+                "Tropic of Cancer",
+                "International Date Line"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Prime time for trivia!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        }
+    ]
+}

@@ -1,0 +1,847 @@
+{
+    "id": "math",
+    "name": "Mathematics",
+    "icon": "\ud83d\udd22",
+    "questions": [
+        {
+            "id": "math_01",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the value of \u03c0 (pi) rounded to 4 decimal places?",
+            "answers": [
+                "3.1416",
+                "3.1459",
+                "3.1492",
+                "3.1428"
+            ],
+            "correctIndex": 0,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "The ancient mathematical runes glow with understanding. The path forward becomes clearer...",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-18"
+        },
+        {
+            "id": "math_02",
+            "enabled": true,
+            "status": "complete",
+            "text": "If a train travels at 60 mph for 2.5 hours, how many miles does it travel?",
+            "answers": [
+                "120 miles",
+                "150 miles",
+                "180 miles",
+                "135 miles"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Your mathematical prowess lights another torch in the darkness!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-18"
+        },
+        {
+            "id": "math_03",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the square root of 144?",
+            "answers": [
+                "11",
+                "12",
+                "13",
+                "14"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Numbers dance in the air as you solve another riddle of the ancients!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-18"
+        },
+        {
+            "id": "math_04",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is 15% of 200?",
+            "answers": [
+                "25",
+                "30",
+                "35",
+                "40"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "The percentages align in your favor, hero!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-18"
+        },
+        {
+            "id": "math_05",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the sum of all angles in a triangle?",
+            "answers": [
+                "180 degrees",
+                "360 degrees",
+                "90 degrees",
+                "270 degrees"
+            ],
+            "correctIndex": 0,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Geometric wisdom flows through your veins!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-18"
+        },
+        {
+            "id": "math_06",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is 7 multiplied by 8?",
+            "answers": [
+                "54",
+                "56",
+                "58",
+                "62"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Multiplication mastery!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "math_07",
+            "enabled": true,
+            "status": "complete",
+            "text": "What acts as the numerator in the fraction 3/4?",
+            "answers": [
+                "3",
+                "4",
+                "7",
+                "1"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "You're on top of this!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "math_08",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the square root of 64?",
+            "answers": [
+                "6",
+                "7",
+                "8",
+                "9"
+            ],
+            "correctIndex": 2,
+            "storyProgression": "Rooted in knowledge!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "math_09",
+            "enabled": true,
+            "status": "complete",
+            "text": "How many sides does a hexagon have?",
+            "answers": [
+                "5",
+                "6",
+                "7",
+                "8"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Shape shifter!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "math_10",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is 100 divided by 4?",
+            "answers": [
+                "20",
+                "24",
+                "25",
+                "30"
+            ],
+            "correctIndex": 2,
+            "storyProgression": "Quarter master!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "math_11",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is 12 squared?",
+            "answers": [
+                "124",
+                "144",
+                "132",
+                "164"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Exponential growth!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "math_12",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which number is a prime number?",
+            "answers": [
+                "4",
+                "9",
+                "11",
+                "15"
+            ],
+            "correctIndex": 2,
+            "storyProgression": "Prime choice!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "math_13",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is 50 + 75?",
+            "answers": [
+                "115",
+                "125",
+                "135",
+                "145"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Adding to your score!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "math_14",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is 1000 minus 450?",
+            "answers": [
+                "450",
+                "550",
+                "650",
+                "350"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Subtracting ignorance!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "math_15",
+            "enabled": true,
+            "status": "complete",
+            "text": "What does the Roman numeral 'V' represent?",
+            "answers": [
+                "1",
+                "5",
+                "10",
+                "50"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Victorious V!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "math_16",
+            "enabled": true,
+            "status": "complete",
+            "text": "How many degrees are in a right angle?",
+            "answers": [
+                "45",
+                "90",
+                "180",
+                "360"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Right on!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "math_17",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is 0.5 as a fraction?",
+            "answers": [
+                "1/3",
+                "1/4",
+                "1/2",
+                "3/4"
+            ],
+            "correctIndex": 2,
+            "storyProgression": "Halfway there!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "math_18",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is 5 cubed (5^3)?",
+            "answers": [
+                "15",
+                "25",
+                "125",
+                "625"
+            ],
+            "correctIndex": 2,
+            "storyProgression": "Cubed victory!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "math_19",
+            "enabled": true,
+            "status": "complete",
+            "text": "Solve for x: 2x = 10",
+            "answers": [
+                "2",
+                "4",
+                "5",
+                "10"
+            ],
+            "correctIndex": 2,
+            "storyProgression": "Algebra adventurer!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "math_20",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the perimeter of a square with side length 4?",
+            "answers": [
+                "8",
+                "12",
+                "16",
+                "20"
+            ],
+            "correctIndex": 2,
+            "storyProgression": "Edging towards victory!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "math_21",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is 10% of 500?",
+            "answers": [
+                "5",
+                "50",
+                "15",
+                "25"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Percent perfect!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "math_22",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which is an even number?",
+            "answers": [
+                "3",
+                "7",
+                "11",
+                "22"
+            ],
+            "correctIndex": 3,
+            "storyProgression": "Evenly matched!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "math_23",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the Roman numeral for 10?",
+            "answers": [
+                "V",
+                "X",
+                "L",
+                "C"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "X marks the spot!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "math_24",
+            "enabled": true,
+            "status": "complete",
+            "text": "How many days are in a leap year?",
+            "answers": [
+                "364",
+                "365",
+                "366",
+                "367"
+            ],
+            "correctIndex": 2,
+            "storyProgression": "Leaping ahead!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "math_25",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is 9 x 9?",
+            "answers": [
+                "18",
+                "72",
+                "81",
+                "90"
+            ],
+            "correctIndex": 2,
+            "storyProgression": "Multiplication magic!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "math_26",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is 3 squared?",
+            "answers": [
+                "6",
+                "9",
+                "12",
+                "30"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Three times three is victory!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "math_27",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is 100 - 1?",
+            "answers": [
+                "90",
+                "99",
+                "101",
+                "110"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Ninety-nine problems but this ain't one!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "math_28",
+            "enabled": true,
+            "status": "complete",
+            "text": "What comes after trillion?",
+            "answers": [
+                "Billion",
+                "Quadrillion",
+                "Quintillion",
+                "Zillion"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Huge numbers, huge intellect!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "math_29",
+            "enabled": true,
+            "status": "complete",
+            "text": "What angle is less than 90 degrees?",
+            "answers": [
+                "Obtuse",
+                "Right",
+                "Acute",
+                "Straight"
+            ],
+            "correctIndex": 2,
+            "storyProgression": "A cute answer!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "math_30",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is 1 + 2 + 3 + 4?",
+            "answers": [
+                "9",
+                "10",
+                "11",
+                "12"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Perfect 10!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        }
+    ]
+}

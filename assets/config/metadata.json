@@ -1,0 +1,15 @@
+{
+    "meta": {
+        "title": "Doctor Mays' Birthday Quest",
+        "birthdayMessage": "Happy Birthday Doctor Mays!",
+        "version": "1.0.0",
+        "storyIntro": [
+            "In a realm where knowledge is power and wisdom is the greatest treasure...",
+            "A great darkness known as the Shadow of Ignorance has begun to consume the land of Trivia.",
+            "The ancient Oracle speaks: 'Only a hero of wit and wisdom can push back the shadow.'",
+            "You must conquer the Trials of Knowledge to bring light back to the realm.",
+            "Each trial solved brings the kingdom closer to the Grand Celebration!",
+            "Your quest begins now, brave hero..."
+        ]
+    }
+}

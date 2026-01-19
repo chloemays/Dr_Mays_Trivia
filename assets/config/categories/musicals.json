@@ -1,0 +1,847 @@
+{
+    "id": "musicals",
+    "name": "Musicals",
+    "icon": "\ud83c\udfad",
+    "questions": [
+        {
+            "id": "musicals_01",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which musical features the song 'Memory'?",
+            "answers": [
+                "Phantom of the Opera",
+                "Les Mis\u00e9rables",
+                "Cats",
+                "Chicago"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "The theater spirits applaud your Broadway brilliance!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-18"
+        },
+        {
+            "id": "musicals_02",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who wrote the music for 'Hamilton'?",
+            "answers": [
+                "Stephen Sondheim",
+                "Andrew Lloyd Webber",
+                "Lin-Manuel Miranda",
+                "Jonathan Larson"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Your knowledge of the theatrical arts is legendary!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-18"
+        },
+        {
+            "id": "musicals_03",
+            "enabled": true,
+            "status": "complete",
+            "text": "In 'The Phantom of the Opera', what is the Phantom's real name?",
+            "answers": [
+                "Raoul",
+                "Erik",
+                "Andr\u00e9",
+                "Firmin"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "The music of the night celebrates your wisdom!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-18"
+        },
+        {
+            "id": "musicals_04",
+            "enabled": true,
+            "status": "complete",
+            "text": "In 'Wicked', who wrote the book (lyrics and story)?",
+            "answers": [
+                "Stephen Schwartz",
+                "Winnie Holzman",
+                "Gregory Maguire",
+                "Joe Mantello"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Defying gravity with your theatrical knowledge!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-18"
+        },
+        {
+            "id": "musicals_05",
+            "enabled": true,
+            "status": "complete",
+            "text": "What musical is based on Victor Hugo's novel about revolution in France?",
+            "answers": [
+                "Sweeney Todd",
+                "Les Mis\u00e9rables",
+                "Miss Saigon",
+                "The Hunchback of Notre Dame"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Do you hear the people sing? They sing with joy at your wisdom!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-18"
+        },
+        {
+            "id": "musicals_06",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which musical is reimagining of The Wizard of Oz?",
+            "answers": [
+                "The Wiz",
+                "Wicked",
+                "Oz Great and Powerful",
+                "Dorothy's Journey"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Defying expectations!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "musicals_07",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the longest running musical on Broadway?",
+            "answers": [
+                "The Lion King",
+                "Chicago",
+                "The Phantom of the Opera",
+                "Cats"
+            ],
+            "correctIndex": 2,
+            "storyProgression": "Music of the night!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "musicals_08",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who wrote 'The Sound of Music'?",
+            "answers": [
+                "Rodgers and Hammerstein",
+                "Lerner and Loewe",
+                "Kander and Ebb",
+                "Webber and Rice"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "The hills are alive with knowledge!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "musicals_09",
+            "enabled": true,
+            "status": "complete",
+            "text": "In 'Grease', what is the name of the rival gang?",
+            "answers": [
+                "The Sharks",
+                "The Jets",
+                "The Scorpions",
+                "The T-Birds"
+            ],
+            "correctIndex": 2,
+            "storyProgression": "Greased lightning!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "musicals_10",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the name of the plant in 'Little Shop of Horrors'?",
+            "answers": [
+                "Audrey II",
+                "Seymour",
+                "Venus",
+                "Chomper"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Feed me knowledge!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "musicals_11",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which musical is set during the French Revolution?",
+            "answers": [
+                "Hamilton",
+                "Les Mis\u00e9rables",
+                "Evita",
+                "Miss Saigon"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Vive les facts!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "musicals_12",
+            "enabled": true,
+            "status": "complete",
+            "text": "What musical features the song 'Don't Cry for Me Argentina'?",
+            "answers": [
+                "Rent",
+                "Evita",
+                "Cats",
+                "Chicago"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "High flying adored!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "musicals_13",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who is the lead character in 'Fiddler on the Roof'?",
+            "answers": [
+                "Yente",
+                "Perchik",
+                "Tevye",
+                "Motel"
+            ],
+            "correctIndex": 2,
+            "storyProgression": "Tradition!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "musicals_14",
+            "enabled": true,
+            "status": "complete",
+            "text": "What musical is based on the movie 'Monty Python and the Holy Grail'?",
+            "answers": [
+                "Spamalot",
+                "Life of Brian",
+                "The Meaning of Life",
+                "Flying Circus"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Always look on the bright side!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "musicals_15",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which musical features ABBA songs?",
+            "answers": [
+                "Jersey Boys",
+                "Mamma Mia!",
+                "Rock of Ages",
+                "Movin' Out"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Dancing Queen!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "musicals_16",
+            "enabled": true,
+            "status": "complete",
+            "text": "In 'The Music Man', how many trombones led the big parade?",
+            "answers": [
+                "50",
+                "76",
+                "100",
+                "110"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Marching to victory!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "musicals_17",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which musical is about the wives of Henry VIII?",
+            "answers": [
+                "Six",
+                "Hamilton",
+                "The King and I",
+                "Camelot"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "History remix!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "musicals_18",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the name of the orphanage in 'Annie'?",
+            "answers": [
+                "Miss Hannigan's",
+                "The Hudson",
+                "New York Municipal",
+                "Sunnybrook"
+            ],
+            "correctIndex": 2,
+            "storyProgression": "Sun'll come out tomorrow!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "musicals_19",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who wrote 'Rent'?",
+            "answers": [
+                "Jonathan Larson",
+                "Lin-Manuel Miranda",
+                "Stephen Schwartz",
+                "Andrew Lloyd Webber"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Seasons of knowledge!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "musicals_20",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which musical features the song 'Defying Gravity'?",
+            "answers": [
+                "Wicked",
+                "The Wizard of Oz",
+                "Hairspray",
+                "Frozen"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Soaring high!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "musicals_21",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the longest running American musical on Broadway?",
+            "answers": [
+                "Chicago",
+                "A Chorus Line",
+                "Hamilton",
+                "Rent"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Razzle Dazzle!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "musicals_22",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which musical is based on the opera 'La Boh\u00e8me'?",
+            "answers": [
+                "Moulin Rouge",
+                "Rent",
+                "Miss Saigon",
+                "Aida"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Bohemian wisdom!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "musicals_23",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the name of the lion in 'The Wiz'?",
+            "answers": [
+                "Simba",
+                "Fleetwood",
+                "Cowardly Lion",
+                "Mean Ole Lion"
+            ],
+            "correctIndex": 2,
+            "storyProgression": "Ease on down the road!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "musicals_24",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who played the Phantom in the 2004 movie adaptation?",
+            "answers": [
+                "Michael Crawford",
+                "Gerard Butler",
+                "Hugh Jackman",
+                "Ramin Karimloo"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Angel of Music!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "musicals_25",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which musical features the song 'You Can't Stop the Beat'?",
+            "answers": [
+                "Grease",
+                "Hairspray",
+                "Footloose",
+                "Fame"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Motion of the ocean!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "musicals_26",
+            "enabled": true,
+            "status": "complete",
+            "text": "What musical is about a young girl with telekinetic powers?",
+            "answers": [
+                "Matilda",
+                "Carrie",
+                "Annie",
+                "Violet"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Naughty but nice!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "musicals_27",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who wrote the lyrics for 'West Side Story'?",
+            "answers": [
+                "Bernstein",
+                "Sondheim",
+                "Gershwin",
+                "Porter"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Something's coming... more points!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "musicals_28",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which musical takes place in the Kit Kat Klub?",
+            "answers": [
+                "Cabaret",
+                "Chicago",
+                "Burlesque",
+                "Kiss of the Spider Woman"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Willkommen!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "musicals_29",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the name of the drag queen in 'Kinky Boots'?",
+            "answers": [
+                "Lola",
+                "Zaza",
+                "Albin",
+                "Frank-N-Furter"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Just be who you wanna be!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "musicals_30",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which musical features the song 'Seasons of Love'?",
+            "answers": [
+                "Rent",
+                "Hair",
+                "Spring Awakening",
+                "Godspell"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "525,600 minutes of knowledge!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        }
+    ]
+}

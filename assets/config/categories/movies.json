@@ -1,0 +1,567 @@
+{
+    "id": "movies",
+    "name": "Movies",
+    "icon": "\ud83c\udfac",
+    "questions": [
+        {
+            "id": "mov_01",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who directed the movie 'Jaws'?",
+            "answers": [
+                "George Lucas",
+                "Steven Spielberg",
+                "James Cameron",
+                "Alfred Hitchcock"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "You're gonna need a bigger brain!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "mov_02",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which character said, 'I'll be back'?",
+            "answers": [
+                "Rocky Balboa",
+                "The Terminator",
+                "Rambo",
+                "RoboCop"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Hasta la vista, ignorance!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "mov_03",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the name of the hobbit played by Elijah Wood in 'The Lord of the Rings'?",
+            "answers": [
+                "Samwise Gamgee",
+                "Bilbo Baggins",
+                "Frodo Baggins",
+                "Merry Brandybuck"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "One answer to rule them all!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "mov_04",
+            "enabled": true,
+            "status": "complete",
+            "text": "In 'The Matrix', what color pill does Neo take?",
+            "answers": [
+                "Blue",
+                "Red",
+                "Green",
+                "Yellow"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Welcome to the real world!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "mov_05",
+            "enabled": true,
+            "status": "complete",
+            "text": "What year was the first 'Star Wars' movie released?",
+            "answers": [
+                "1975",
+                "1977",
+                "1980",
+                "1983"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "The Force is strong with you!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "mov_06",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who played Jack Dawson in 'Titanic'?",
+            "answers": [
+                "Brad Pitt",
+                "Johnny Depp",
+                "Leonardo DiCaprio",
+                "Tom Cruise"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "King of the world!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "mov_07",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which movie features a character named 'Buzz Lightyear'?",
+            "answers": [
+                "Shrek",
+                "Toy Story",
+                "Finding Nemo",
+                "Monsters, Inc."
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "To infinity and beyond!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "mov_08",
+            "enabled": true,
+            "status": "complete",
+            "text": "What kind of fish is Nemo?",
+            "answers": [
+                "Goldfish",
+                "Clownfish",
+                "Pufferfish",
+                "Angelfish"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Found the answer!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "mov_09",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who voiced the Genie in Disney's 'Aladdin' (1992)?",
+            "answers": [
+                "Eddie Murphy",
+                "Robin Williams",
+                "Jim Carrey",
+                "Will Smith"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Phenomenal cosmic knowledge!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "mov_10",
+            "enabled": true,
+            "status": "complete",
+            "text": "In 'The Wizard of Oz', what is Dorothy looking for?",
+            "answers": [
+                "A heart",
+                "Courage",
+                "A brain",
+                "A way home"
+            ],
+            "correctIndex": 3,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "There's no place like correct answers!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "mov_11",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which film won the first Academy Award for Best Animated Feature?",
+            "answers": [
+                "Shrek",
+                "Toy Story",
+                "Monsters, Inc.",
+                "Ice Age"
+            ],
+            "correctIndex": 0,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Like an onion, you have layers of knowledge!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "mov_12",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who played Iron Man in the Marvel Cinematic Universe?",
+            "answers": [
+                "Chris Evans",
+                "Chris Hemsworth",
+                "Robert Downey Jr.",
+                "Mark Ruffalo"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "I am... Correct!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "mov_13",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the name of the kingdom in 'Frozen'?",
+            "answers": [
+                "Arendelle",
+                "Genovia",
+                "Florin",
+                "Aldovia"
+            ],
+            "correctIndex": 0,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Let it go... and accept the win!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "mov_14",
+            "enabled": true,
+            "status": "complete",
+            "text": "In 'Back to the Future', how fast does the DeLorean have to go to time travel?",
+            "answers": [
+                "66 mph",
+                "77 mph",
+                "88 mph",
+                "99 mph"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Great Scott!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "mov_15",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who is the villain in 'The Lion King'?",
+            "answers": [
+                "Scar",
+                "Mufasa",
+                "Jafar",
+                "Gaston"
+            ],
+            "correctIndex": 0,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Be prepared... for success!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "mov_16",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which movie features the song 'My Heart Will Go On'?",
+            "answers": [
+                "The Bodyguard",
+                "Titanic",
+                "Ghost",
+                "Armageddon"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Near, far, wherever you are, you're right!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "mov_17",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the name of the fictional country in 'Black Panther'?",
+            "answers": [
+                "Zamunda",
+                "Wakanda",
+                "Genovia",
+                "Latveria"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Wakanda Forever!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "mov_18",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who directed 'Pulp Fiction'?",
+            "answers": [
+                "Martin Scorsese",
+                "Quentin Tarantino",
+                "Francis Ford Coppola",
+                "Stanley Kubrick"
+            ],
+            "correctIndex": 1,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Royale with cheese!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "mov_19",
+            "enabled": true,
+            "status": "complete",
+            "text": "What creates the dinosaurs in 'Jurassic Park'?",
+            "answers": [
+                "Aliens",
+                "Magic",
+                "Cloning",
+                "Robots"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Life finds a way!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "mov_20",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who played the Joker in 'The Dark Knight'?",
+            "answers": [
+                "Jack Nicholson",
+                "Jared Leto",
+                "Heath Ledger",
+                "Joaquin Phoenix"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Why so serious? You got it right!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        }
+    ]
+}

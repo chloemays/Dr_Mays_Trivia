@@ -1,0 +1,707 @@
+{
+    "id": "baseball",
+    "name": "Baseball",
+    "icon": "\u26be",
+    "questions": [
+        {
+            "id": "baseball_01",
+            "enabled": true,
+            "status": "complete",
+            "text": "In what year did the Kansas City Royals win their first World Series?",
+            "answers": [
+                "1980",
+                "1983",
+                "1985",
+                "1988"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "The spirit of George Brett salutes your Royals knowledge!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-18"
+        },
+        {
+            "id": "baseball_02",
+            "enabled": true,
+            "status": "complete",
+            "text": "How many innings are in a standard professional baseball game?",
+            "answers": [
+                "7",
+                "8",
+                "9",
+                "10"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "A home run of knowledge! The crowd goes wild!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-18"
+        },
+        {
+            "id": "baseball_03",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who holds the record for most career home runs in MLB history?",
+            "answers": [
+                "Babe Ruth",
+                "Hank Aaron",
+                "Barry Bonds",
+                "Willie Mays"
+            ],
+            "correctIndex": 2,
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "storyProgression": "Your baseball expertise is Hall of Fame worthy!",
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-18"
+        },
+        {
+            "id": "baseball_04",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which player was known as 'The Bambino'?",
+            "answers": [
+                "Ty Cobb",
+                "Babe Ruth",
+                "Lou Gehrig",
+                "Joe DiMaggio"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Legendary Answer!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "baseball_05",
+            "enabled": true,
+            "status": "complete",
+            "text": "What team is involved in the 'Curse of the Bambino'?",
+            "answers": [
+                "Chicago Cubs",
+                "Boston Red Sox",
+                "New York Yankees",
+                "Cleveland Indians"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Curse broken!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "baseball_06",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the distance between bases in MLB?",
+            "answers": [
+                "60 feet",
+                "75 feet",
+                "90 feet",
+                "100 feet"
+            ],
+            "correctIndex": 2,
+            "storyProgression": "Rounding the bases!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "baseball_07",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who broke the color barrier in MLB?",
+            "answers": [
+                "Satchel Paige",
+                "Jackie Robinson",
+                "Hank Aaron",
+                "Willie Mays"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "History made!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "baseball_08",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the 'Green Monster'?",
+            "answers": [
+                "A mascot",
+                "A wall at Fenway Park",
+                "A drink",
+                "A nickname for a player"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Off the wall!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "baseball_09",
+            "enabled": true,
+            "status": "complete",
+            "text": "How many strikes make an out?",
+            "answers": [
+                "2",
+                "3",
+                "4",
+                "5"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "You're safe!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "baseball_10",
+            "enabled": true,
+            "status": "complete",
+            "text": "What position is number 1 on a scorecard?",
+            "answers": [
+                "Catcher",
+                "Pitcher",
+                "First Base",
+                "Shortstop"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Ace pitcher!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "baseball_11",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who holds the record for consecutive games played?",
+            "answers": [
+                "Cal Ripken Jr.",
+                "Lou Gehrig",
+                "Pete Rose",
+                "Derek Jeter"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Iron Man of trivia!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "baseball_12",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is a 'grand slam'?",
+            "answers": [
+                "A home run with bases loaded",
+                "A triple play",
+                "Winning 4 games in a row",
+                "Striking out the side"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Grand Slam knowledge!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "baseball_13",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which team has won the most World Series titles?",
+            "answers": [
+                "St. Louis Cardinals",
+                "New York Yankees",
+                "Los Angeles Dodgers",
+                "San Francisco Giants"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Championship caliber!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "baseball_14",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the '7th Inning Stretch'?",
+            "answers": [
+                "A yoga pose",
+                "A break in the game",
+                "A player nickname",
+                "A type of pitch"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Take me out to the ballgame!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "baseball_15",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who was known as 'The Say Hey Kid'?",
+            "answers": [
+                "Willie Mays",
+                "Hank Aaron",
+                "Mickey Mantle",
+                "Joe DiMaggio"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Say hey, you got it right!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "baseball_16",
+            "enabled": true,
+            "status": "complete",
+            "text": "What happens if a ball hits the foul pole?",
+            "answers": [
+                "It is a foul ball",
+                "It is a home run",
+                "It is a ground rule double",
+                "The batter is out"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Fair ball!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "baseball_17",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is a 'perfect game'?",
+            "answers": [
+                "No hits",
+                "No runs",
+                "No baserunners allowed",
+                "Winning via shutout"
+            ],
+            "correctIndex": 2,
+            "storyProgression": "Perfection!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "baseball_18",
+            "enabled": true,
+            "status": "complete",
+            "text": "How many outs per inning (both teams)?",
+            "answers": [
+                "3",
+                "6",
+                "9",
+                "4"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Six outs, but you're still in!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "baseball_19",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which city do the Red Sox play in?",
+            "answers": [
+                "Chicago",
+                "New York",
+                "Boston",
+                "Philadelphia"
+            ],
+            "correctIndex": 2,
+            "storyProgression": "Wicked smaht!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "baseball_20",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the Cy Young Award given for?",
+            "answers": [
+                "Best Hitter",
+                "Best Pitcher",
+                "Best Fielder",
+                "MVP"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Award winning answer!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "baseball_21",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who is 'Mr. October'?",
+            "answers": [
+                "Reggie Jackson",
+                "Derek Jeter",
+                "Babe Ruth",
+                "Mickey Mantle"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Clutch performance!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "baseball_22",
+            "enabled": true,
+            "status": "complete",
+            "text": "What does RBI stand for?",
+            "answers": [
+                "Runs Batted In",
+                "Real Baseball Intel",
+                "Runs Base Instantly",
+                "Right Base Infield"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Driving in the points!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "baseball_23",
+            "enabled": true,
+            "status": "complete",
+            "text": "Which player wore number 42, which is now retired by all teams?",
+            "answers": [
+                "Jackie Robinson",
+                "Babe Ruth",
+                "Hank Aaron",
+                "Willie Mays"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Respecting the legend!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "baseball_24",
+            "enabled": true,
+            "status": "complete",
+            "text": "What is the 'Fall Classic'?",
+            "answers": [
+                "All-Star Game",
+                "World Series",
+                "Opening Day",
+                "Home Run Derby"
+            ],
+            "correctIndex": 1,
+            "storyProgression": "Classic knowledge!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        },
+        {
+            "id": "baseball_25",
+            "enabled": true,
+            "status": "complete",
+            "text": "Who hit 700 home runs?",
+            "answers": [
+                "Albert Pujols",
+                "Ken Griffey Jr",
+                "Alex Rodriguez",
+                "Sammy Sosa"
+            ],
+            "correctIndex": 0,
+            "storyProgression": "Power hitter!",
+            "media": {
+                "image": null,
+                "audio": null,
+                "video": null
+            },
+            "requiredMedia": {
+                "image": {
+                    "needed": false,
+                    "description": null
+                }
+            },
+            "progressionImage": null,
+            "author": "AI",
+            "dateCreated": "2026-01-19"
+        }
+    ]
+}
