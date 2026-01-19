@@ -271,6 +271,13 @@ class AudioManager {
             this.updateProgressBarVisual();
         }
     }
+
+    playSound(soundName) {
+        // Placeholder for SFX
+        // console.log(`Playing sound: ${soundName}`);
+        // If we have an SFX manager or files, implementation goes here.
+        // For now, this prevents the crash.
+    }
 }
 
 // Export instance

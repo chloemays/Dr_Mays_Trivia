@@ -1,9 +1,15 @@
+"""Setup audio assets for the game.
+
+Organizes background music files and generates a manifest.
+"""
+
 from pathlib import Path
 import json
 import os
 import shutil
 
 def main():
+    """Process audio files and generate configuration."""
     root = Path.cwd()
     source_dir = root / 'background_music'
     target_dir = root / 'assets' / 'background_audio_clean'

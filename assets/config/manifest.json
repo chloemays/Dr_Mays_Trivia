@@ -10,7 +10,6 @@
         "assets/config/categories/baseball.json",
         "assets/config/categories/cooking.json",
         "assets/config/categories/geography.json",
-        "assets/config/categories/science.json",
-        "assets/config/categories/movies.json"
+        "assets/config/categories/science.json"
     ]
 }

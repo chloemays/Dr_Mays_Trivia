@@ -87,8 +87,12 @@ const game = {
     async init() {
         try {
             await this.loadConfig();
-            if (window.audioManager) await window.audioManager.init();
+            if (window.audioManager) {
+                await window.audioManager.init();
+                this.audioManager = window.audioManager;
+            }
             this.showScreen('title-screen');
+            if (window.VisualEffects) window.VisualEffects.startFloatingEmojis('music');
             console.log('Doctor Mays\' Birthday Quest initialized!');
         } catch (error) {
             console.error('Failed to initialize game:', error);
@@ -165,6 +169,7 @@ const game = {
      */
     startGame() {
         this.showScreen('birthday-splash');
+        if (window.VisualEffects) window.VisualEffects.startFloatingEmojis('party');
     },
 
     /**
@@ -173,6 +178,7 @@ const game = {
     showCharacterSelect() {
         this.renderCharacterGrid();
         this.showScreen('character-select');
+        if (window.VisualEffects) window.VisualEffects.startFloatingEmojis('hero');
     },
 
     /**
@@ -273,6 +279,8 @@ const game = {
 
         // Assign story segments between questions
         this.assignStorySegments();
+
+        if (window.VisualEffects) window.VisualEffects.stopFloatingEmojis();
 
         this.startDramaticIntro();
     },
@@ -728,8 +736,8 @@ const game = {
      * @param {Object} question - The question with story progression
      */
     showStoryProgression(data) {
-        const modal = document.getElementById('story-modal');
-        const modalText = document.getElementById('story-progression-text');
+        const modal = document.getElementById('story-progression');
+        const modalText = document.getElementById('progression-text');
         const modalImage = document.getElementById('progression-image');
 
         // Show text
@@ -741,32 +749,50 @@ const game = {
             modalImage.classList.remove('hidden');
 
             // Dynamic Background: Match the story image
-            document.body.style.backgroundImage = `url('${data.progressionImage}')`;
-            document.body.style.backgroundSize = 'cover';
-            document.body.style.backgroundPosition = 'center';
-            document.body.style.transition = 'background-image 1s ease-in-out';
+            // Store background for later application (after user clicks Continue)
+            gameState.pendingBackground = `url('${data.progressionImage}')`;
+
+            // Keep background dark/clean for text readability during story
+            document.body.style.backgroundImage = 'none';
+            document.body.style.backgroundColor = 'var(--deep-space)'; // Use theme color
 
             // Dynamic Music: Switch track based on Act index
             // We need to know which Act this is. 
             // We can infer it from the image filename or by passing the index.
             // Simplified approach: Cycle through tracks based on currentQuestionIndex
             const trackIndex = Math.floor(gameState.currentQuestionIndex / (gameState.totalQuestions / 10)) % 8;
-            game.audioManager.playTrack(trackIndex);
+            if (this.audioManager && this.audioManager.currentTrackIndex !== trackIndex) {
+                this.audioManager.loadTrack(trackIndex);
+            }
 
         } else {
             modalImage.classList.add('hidden');
         }
 
-        modal.classList.add('active');
+        // Use standard screen switching to ensure other screens are hidden
+        this.showScreen('story-progression');
 
         // Play sound effect
-        this.audioManager.playSound('correct');
+        if (this.audioManager) {
+            this.audioManager.playSound('correct');
+        }
     },
 
     /**
      * Continue after viewing story progression
      */
     continueAfterStory() {
+        // Apply the new background image now that we are moving to the question
+        if (gameState.pendingBackground) {
+            document.body.style.backgroundImage = gameState.pendingBackground;
+            document.body.style.backgroundSize = 'cover';
+            document.body.style.backgroundPosition = 'center top';
+            document.body.style.backgroundRepeat = 'no-repeat';
+            document.body.style.backgroundAttachment = 'fixed';
+            document.body.style.transition = 'background-image 1s ease-in-out';
+            gameState.pendingBackground = null; // Clear it
+        }
+
         if (gameState.isReplay) {
             this.nextReplaySlide();
         } else {
@@ -821,7 +847,36 @@ const game = {
         `;
 
         this.updateProgressBar(); // Show 100%
+
+        // Victory Visuals
+        document.body.style.backgroundImage = 'none';
+        document.body.style.backgroundColor = 'black';
+
         this.showScreen('victory-screen');
+        this.createConfetti();
+    },
+
+    createConfetti() {
+        const colors = ['#f72585', '#4361ee', '#39ff14', '#ffd700'];
+        const confettiCount = 100;
+
+        for (let i = 0; i < confettiCount; i++) {
+            const confetti = document.createElement('div');
+            confetti.style.position = 'fixed';
+            confetti.style.width = '10px';
+            confetti.style.height = '10px';
+            confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+            confetti.style.left = Math.random() * 100 + 'vw';
+            confetti.style.top = '-10px';
+            confetti.style.animation = `fall ${Math.random() * 3 + 2}s linear infinite`;
+            confetti.style.opacity = Math.random();
+            confetti.style.transform = `rotate(${Math.random() * 360}deg)`;
+
+            document.body.appendChild(confetti);
+
+            // Cleanup
+            setTimeout(() => confetti.remove(), 5000);
+        }
     },
 
     /**

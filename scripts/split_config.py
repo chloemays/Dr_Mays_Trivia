@@ -1,9 +1,15 @@
+"""Split game configuration into multiple files.
+
+Separates the monolithic game config into metadata, characters, and individual categories.
+"""
+
 from pathlib import Path
 import json
 import os
 import sys
 
 def main():
+    """Execute the configuration split process."""
     root = Path.cwd()
     config_path = root / 'gameConfig.json'
 

@@ -440,7 +440,7 @@ body {
 }
 
 .question-container {
-    background: rgba(45, 10, 78, 0.5);
+    background: rgba(45, 10, 78, 0.85);
     border: 2px solid var(--medium-purple);
     border-radius: 16px;
     padding: var(--space-xl);
@@ -498,7 +498,7 @@ body {
     font-size: 1rem;
     font-weight: 500;
     color: var(--chrome-silver);
-    background: rgba(67, 97, 238, 0.15);
+    background: rgba(67, 97, 238, 0.5);
     border: 2px solid var(--electric-blue);
     border-radius: 8px;
     cursor: pointer;
@@ -1126,6 +1126,7 @@ body::after {
         transform: scale(1.05);
     }
 }
+
 /* =====================================================
    Story Images & Spectacular Effects
    ===================================================== */
@@ -1141,12 +1142,13 @@ body::after {
     width: 100%;
 }
 
-.progression-image, .intro-image {
+.progression-image,
+.intro-image {
     max-width: 100%;
     max-height: 400px;
     width: auto;
     border: 4px solid var(--neon-cyan);
-    box-shadow: 
+    box-shadow:
         0 0 20px var(--neon-cyan),
         0 0 40px var(--neon-magenta),
         inset 0 0 50px rgba(0, 0, 0, 0.5);
@@ -1163,13 +1165,15 @@ body::after {
         box-shadow: 0 0 20px var(--neon-cyan), 0 0 10px var(--neon-purple);
         border-color: var(--neon-cyan);
     }
+
     100% {
         box-shadow: 0 0 40px var(--neon-magenta), 0 0 20px var(--neon-cyan);
         border-color: var(--neon-magenta);
     }
 }
 
-.progression-image:not(.hidden), .intro-image:not(.hidden) {
+.progression-image:not(.hidden),
+.intro-image:not(.hidden) {
     opacity: 1;
     animation: imageReveal 1.5s ease-out forwards, imageGlow 3s infinite alternate 1.5s;
 }
@@ -1180,6 +1184,7 @@ body::after {
         transform: scale(0.9) translateY(20px);
         filter: blur(10px);
     }
+
     100% {
         opacity: 1;
         transform: scale(1) translateY(0);
@@ -1198,10 +1203,11 @@ body::after {
 /* Victory Image */
 .victory-image {
     max-width: 100%;
-    max-height: 300px; /* Slightly smaller to fit with stats */
+    max-height: 300px;
+    /* Slightly smaller to fit with stats */
     width: auto;
     border: 4px solid var(--gold-accent);
-    box-shadow: 
+    box-shadow:
         0 0 30px var(--gold-accent),
         0 0 60px var(--pixel-gold),
         inset 0 0 50px rgba(255, 215, 0, 0.3);
@@ -1218,6 +1224,7 @@ body::after {
         transform: scale(0.8) rotate(-5deg);
         filter: brightness(2);
     }
+
     100% {
         opacity: 1;
         transform: scale(1) rotate(0);
@@ -1238,3 +1245,42 @@ body::after {
     box-shadow: 0 0 5px var(--gold-accent);
 }
 
+@keyframes fall {
+    to {
+        transform: translateY(100vh) rotate(720deg);
+    }
+}
+
+/* =====================================================
+   Visual Effects
+   ===================================================== */
+.bg-emoji {
+    position: fixed;
+    z-index: -1;
+    bottom: -10vh;
+    opacity: 0;
+    pointer-events: none;
+    user-select: none;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+    animation: floatUp linear forwards;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.8;
+    }
+
+    90% {
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(-120vh) rotate(360deg);
+        opacity: 0;
+    }
+}
