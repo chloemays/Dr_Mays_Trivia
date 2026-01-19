@@ -12,7 +12,6 @@
             "Your quest begins now, brave hero..."
         ]
     },
-    
     "characters": [
         {
             "id": "synth_sage",
@@ -50,7 +49,6 @@
             "bio": "A rockstar whose music literally changes reality"
         }
     ],
-    
     "categories": [
         {
             "id": "math",
@@ -62,7 +60,12 @@
                     "enabled": true,
                     "status": "complete",
                     "text": "What is the value of π (pi) rounded to 4 decimal places?",
-                    "answers": ["3.1416", "3.1459", "3.1492", "3.1428"],
+                    "answers": [
+                        "3.1416",
+                        "3.1459",
+                        "3.1492",
+                        "3.1428"
+                    ],
                     "correctIndex": 0,
                     "media": {
                         "image": null,
@@ -70,7 +73,10 @@
                         "video": null
                     },
                     "requiredMedia": {
-                        "image": { "needed": false, "description": null }
+                        "image": {
+                            "needed": false,
+                            "description": null
+                        }
                     },
                     "storyProgression": "The ancient mathematical runes glow with understanding. The path forward becomes clearer...",
                     "progressionImage": null,
@@ -82,7 +88,12 @@
                     "enabled": true,
                     "status": "complete",
                     "text": "If a train travels at 60 mph for 2.5 hours, how many miles does it travel?",
-                    "answers": ["120 miles", "150 miles", "180 miles", "135 miles"],
+                    "answers": [
+                        "120 miles",
+                        "150 miles",
+                        "180 miles",
+                        "135 miles"
+                    ],
                     "correctIndex": 1,
                     "media": {
                         "image": null,
@@ -90,7 +101,10 @@
                         "video": null
                     },
                     "requiredMedia": {
-                        "image": { "needed": false, "description": null }
+                        "image": {
+                            "needed": false,
+                            "description": null
+                        }
                     },
                     "storyProgression": "Your mathematical prowess lights another torch in the darkness!",
                     "progressionImage": null,
@@ -102,7 +116,12 @@
                     "enabled": true,
                     "status": "complete",
                     "text": "What is the square root of 144?",
-                    "answers": ["11", "12", "13", "14"],
+                    "answers": [
+                        "11",
+                        "12",
+                        "13",
+                        "14"
+                    ],
                     "correctIndex": 1,
                     "media": {
                         "image": null,
@@ -110,9 +129,68 @@
                         "video": null
                     },
                     "requiredMedia": {
-                        "image": { "needed": false, "description": null }
+                        "image": {
+                            "needed": false,
+                            "description": null
+                        }
                     },
                     "storyProgression": "Numbers dance in the air as you solve another riddle of the ancients!",
+                    "progressionImage": null,
+                    "author": "AI",
+                    "dateCreated": "2026-01-18"
+                },
+                {
+                    "id": "math_04",
+                    "enabled": true,
+                    "status": "complete",
+                    "text": "What is 15% of 200?",
+                    "answers": [
+                        "25",
+                        "30",
+                        "35",
+                        "40"
+                    ],
+                    "correctIndex": 1,
+                    "media": {
+                        "image": null,
+                        "audio": null,
+                        "video": null
+                    },
+                    "requiredMedia": {
+                        "image": {
+                            "needed": false,
+                            "description": null
+                        }
+                    },
+                    "storyProgression": "The percentages align in your favor, hero!",
+                    "progressionImage": null,
+                    "author": "AI",
+                    "dateCreated": "2026-01-18"
+                },
+                {
+                    "id": "math_05",
+                    "enabled": true,
+                    "status": "complete",
+                    "text": "What is the sum of all angles in a triangle?",
+                    "answers": [
+                        "180 degrees",
+                        "360 degrees",
+                        "90 degrees",
+                        "270 degrees"
+                    ],
+                    "correctIndex": 0,
+                    "media": {
+                        "image": null,
+                        "audio": null,
+                        "video": null
+                    },
+                    "requiredMedia": {
+                        "image": {
+                            "needed": false,
+                            "description": null
+                        }
+                    },
+                    "storyProgression": "Geometric wisdom flows through your veins!",
                     "progressionImage": null,
                     "author": "AI",
                     "dateCreated": "2026-01-18"
@@ -129,7 +207,12 @@
                     "enabled": true,
                     "status": "complete",
                     "text": "What breed of cat is known for its folded ears?",
-                    "answers": ["Scottish Fold", "Persian", "Siamese", "Maine Coon"],
+                    "answers": [
+                        "Scottish Fold",
+                        "Persian",
+                        "Siamese",
+                        "Maine Coon"
+                    ],
                     "correctIndex": 0,
                     "media": {
                         "image": null,
@@ -137,7 +220,10 @@
                         "video": null
                     },
                     "requiredMedia": {
-                        "image": { "needed": false, "description": null }
+                        "image": {
+                            "needed": false,
+                            "description": null
+                        }
                     },
                     "storyProgression": "The guardian cat spirit nods in approval. You truly understand the feline ways!",
                     "progressionImage": null,
@@ -149,7 +235,12 @@
                     "enabled": true,
                     "status": "complete",
                     "text": "How many hours per day does the average cat sleep?",
-                    "answers": ["8-10 hours", "12-16 hours", "6-8 hours", "18-20 hours"],
+                    "answers": [
+                        "8-10 hours",
+                        "12-16 hours",
+                        "6-8 hours",
+                        "18-20 hours"
+                    ],
                     "correctIndex": 1,
                     "media": {
                         "image": null,
@@ -157,7 +248,10 @@
                         "video": null
                     },
                     "requiredMedia": {
-                        "image": { "needed": false, "description": null }
+                        "image": {
+                            "needed": false,
+                            "description": null
+                        }
                     },
                     "storyProgression": "The mystical cat oracle purrs with delight at your wisdom!",
                     "progressionImage": null,
@@ -169,7 +263,12 @@
                     "enabled": true,
                     "status": "complete",
                     "text": "What is a group of cats called?",
-                    "answers": ["A pack", "A clowder", "A herd", "A pride"],
+                    "answers": [
+                        "A pack",
+                        "A clowder",
+                        "A herd",
+                        "A pride"
+                    ],
                     "correctIndex": 1,
                     "media": {
                         "image": null,
@@ -177,9 +276,68 @@
                         "video": null
                     },
                     "requiredMedia": {
-                        "image": { "needed": false, "description": null }
+                        "image": {
+                            "needed": false,
+                            "description": null
+                        }
                     },
                     "storyProgression": "Ancient feline knowledge flows through you!",
+                    "progressionImage": null,
+                    "author": "AI",
+                    "dateCreated": "2026-01-18"
+                },
+                {
+                    "id": "cats_04",
+                    "enabled": true,
+                    "status": "complete",
+                    "text": "What is the term for a cat's sandpaper-like tongue surface?",
+                    "answers": [
+                        "Papillae",
+                        "Whiskers",
+                        "Barbs",
+                        "Filaments"
+                    ],
+                    "correctIndex": 0,
+                    "media": {
+                        "image": null,
+                        "audio": null,
+                        "video": null
+                    },
+                    "requiredMedia": {
+                        "image": {
+                            "needed": false,
+                            "description": null
+                        }
+                    },
+                    "storyProgression": "The secrets of cat anatomy are revealed to you!",
+                    "progressionImage": null,
+                    "author": "AI",
+                    "dateCreated": "2026-01-18"
+                },
+                {
+                    "id": "cats_05",
+                    "enabled": true,
+                    "status": "complete",
+                    "text": "What is the average lifespan of an indoor cat?",
+                    "answers": [
+                        "5-8 years",
+                        "10-15 years",
+                        "15-20 years",
+                        "20-25 years"
+                    ],
+                    "correctIndex": 1,
+                    "media": {
+                        "image": null,
+                        "audio": null,
+                        "video": null
+                    },
+                    "requiredMedia": {
+                        "image": {
+                            "needed": false,
+                            "description": null
+                        }
+                    },
+                    "storyProgression": "Your bond with the feline spirits grows stronger!",
                     "progressionImage": null,
                     "author": "AI",
                     "dateCreated": "2026-01-18"
@@ -196,7 +354,12 @@
                     "enabled": true,
                     "status": "complete",
                     "text": "Which musical features the song 'Memory'?",
-                    "answers": ["Phantom of the Opera", "Les Misérables", "Cats", "Chicago"],
+                    "answers": [
+                        "Phantom of the Opera",
+                        "Les Misérables",
+                        "Cats",
+                        "Chicago"
+                    ],
                     "correctIndex": 2,
                     "media": {
                         "image": null,
@@ -204,7 +367,10 @@
                         "video": null
                     },
                     "requiredMedia": {
-                        "image": { "needed": false, "description": null }
+                        "image": {
+                            "needed": false,
+                            "description": null
+                        }
                     },
                     "storyProgression": "The theater spirits applaud your Broadway brilliance!",
                     "progressionImage": null,
@@ -216,7 +382,12 @@
                     "enabled": true,
                     "status": "complete",
                     "text": "Who wrote the music for 'Hamilton'?",
-                    "answers": ["Stephen Sondheim", "Andrew Lloyd Webber", "Lin-Manuel Miranda", "Jonathan Larson"],
+                    "answers": [
+                        "Stephen Sondheim",
+                        "Andrew Lloyd Webber",
+                        "Lin-Manuel Miranda",
+                        "Jonathan Larson"
+                    ],
                     "correctIndex": 2,
                     "media": {
                         "image": null,
@@ -224,7 +395,10 @@
                         "video": null
                     },
                     "requiredMedia": {
-                        "image": { "needed": false, "description": null }
+                        "image": {
+                            "needed": false,
+                            "description": null
+                        }
                     },
                     "storyProgression": "Your knowledge of the theatrical arts is legendary!",
                     "progressionImage": null,
@@ -236,7 +410,12 @@
                     "enabled": true,
                     "status": "complete",
                     "text": "In 'The Phantom of the Opera', what is the Phantom's real name?",
-                    "answers": ["Raoul", "Erik", "André", "Firmin"],
+                    "answers": [
+                        "Raoul",
+                        "Erik",
+                        "André",
+                        "Firmin"
+                    ],
                     "correctIndex": 1,
                     "media": {
                         "image": null,
@@ -244,9 +423,68 @@
                         "video": null
                     },
                     "requiredMedia": {
-                        "image": { "needed": false, "description": null }
+                        "image": {
+                            "needed": false,
+                            "description": null
+                        }
                     },
                     "storyProgression": "The music of the night celebrates your wisdom!",
+                    "progressionImage": null,
+                    "author": "AI",
+                    "dateCreated": "2026-01-18"
+                },
+                {
+                    "id": "musicals_04",
+                    "enabled": true,
+                    "status": "complete",
+                    "text": "In 'Wicked', who wrote the book (lyrics and story)?",
+                    "answers": [
+                        "Stephen Schwartz",
+                        "Winnie Holzman",
+                        "Gregory Maguire",
+                        "Joe Mantello"
+                    ],
+                    "correctIndex": 1,
+                    "media": {
+                        "image": null,
+                        "audio": null,
+                        "video": null
+                    },
+                    "requiredMedia": {
+                        "image": {
+                            "needed": false,
+                            "description": null
+                        }
+                    },
+                    "storyProgression": "Defying gravity with your theatrical knowledge!",
+                    "progressionImage": null,
+                    "author": "AI",
+                    "dateCreated": "2026-01-18"
+                },
+                {
+                    "id": "musicals_05",
+                    "enabled": true,
+                    "status": "complete",
+                    "text": "What musical is based on Victor Hugo's novel about revolution in France?",
+                    "answers": [
+                        "Sweeney Todd",
+                        "Les Misérables",
+                        "Miss Saigon",
+                        "The Hunchback of Notre Dame"
+                    ],
+                    "correctIndex": 1,
+                    "media": {
+                        "image": null,
+                        "audio": null,
+                        "video": null
+                    },
+                    "requiredMedia": {
+                        "image": {
+                            "needed": false,
+                            "description": null
+                        }
+                    },
+                    "storyProgression": "Do you hear the people sing? They sing with joy at your wisdom!",
                     "progressionImage": null,
                     "author": "AI",
                     "dateCreated": "2026-01-18"
@@ -263,7 +501,12 @@
                     "enabled": true,
                     "status": "complete",
                     "text": "Which band released 'Take On Me' in 1985?",
-                    "answers": ["Duran Duran", "a-ha", "Depeche Mode", "Tears for Fears"],
+                    "answers": [
+                        "Duran Duran",
+                        "a-ha",
+                        "Depeche Mode",
+                        "Tears for Fears"
+                    ],
                     "correctIndex": 1,
                     "media": {
                         "image": null,
@@ -271,7 +514,10 @@
                         "video": null
                     },
                     "requiredMedia": {
-                        "image": { "needed": false, "description": null }
+                        "image": {
+                            "needed": false,
+                            "description": null
+                        }
                     },
                     "storyProgression": "The synthwave spirits recognize a true child of the 80s!",
                     "progressionImage": null,
@@ -283,7 +529,12 @@
                     "enabled": true,
                     "status": "complete",
                     "text": "Who sang 'Bohemian Rhapsody'?",
-                    "answers": ["Led Zeppelin", "The Rolling Stones", "Queen", "Pink Floyd"],
+                    "answers": [
+                        "Led Zeppelin",
+                        "The Rolling Stones",
+                        "Queen",
+                        "Pink Floyd"
+                    ],
                     "correctIndex": 2,
                     "media": {
                         "image": null,
@@ -291,7 +542,10 @@
                         "video": null
                     },
                     "requiredMedia": {
-                        "image": { "needed": false, "description": null }
+                        "image": {
+                            "needed": false,
+                            "description": null
+                        }
                     },
                     "storyProgression": "Rock legends salute your musical knowledge!",
                     "progressionImage": null,
@@ -303,7 +557,12 @@
                     "enabled": true,
                     "status": "complete",
                     "text": "What year was Michael Jackson's 'Thriller' album released?",
-                    "answers": ["1980", "1982", "1984", "1986"],
+                    "answers": [
+                        "1980",
+                        "1982",
+                        "1984",
+                        "1986"
+                    ],
                     "correctIndex": 1,
                     "media": {
                         "image": null,
@@ -311,9 +570,68 @@
                         "video": null
                     },
                     "requiredMedia": {
-                        "image": { "needed": false, "description": null }
+                        "image": {
+                            "needed": false,
+                            "description": null
+                        }
                     },
                     "storyProgression": "The King of Pop's legacy shines through your knowledge!",
+                    "progressionImage": null,
+                    "author": "AI",
+                    "dateCreated": "2026-01-18"
+                },
+                {
+                    "id": "music80s_04",
+                    "enabled": true,
+                    "status": "complete",
+                    "text": "Which band recorded 'Don't Stop Believin''?",
+                    "answers": [
+                        "Boston",
+                        "Foreigner",
+                        "Journey",
+                        "Styx"
+                    ],
+                    "correctIndex": 2,
+                    "media": {
+                        "image": null,
+                        "audio": null,
+                        "video": null
+                    },
+                    "requiredMedia": {
+                        "image": {
+                            "needed": false,
+                            "description": null
+                        }
+                    },
+                    "storyProgression": "Hold on to that feeling - of being a trivia champion!",
+                    "progressionImage": null,
+                    "author": "AI",
+                    "dateCreated": "2026-01-18"
+                },
+                {
+                    "id": "music80s_05",
+                    "enabled": true,
+                    "status": "complete",
+                    "text": "What was Prince's breakthrough album released in 1984?",
+                    "answers": [
+                        "1999",
+                        "Purple Rain",
+                        "Sign o' the Times",
+                        "Dirty Mind"
+                    ],
+                    "correctIndex": 1,
+                    "media": {
+                        "image": null,
+                        "audio": null,
+                        "video": null
+                    },
+                    "requiredMedia": {
+                        "image": {
+                            "needed": false,
+                            "description": null
+                        }
+                    },
+                    "storyProgression": "Purple rain falls upon the realm, cleansing the shadows!",
                     "progressionImage": null,
                     "author": "AI",
                     "dateCreated": "2026-01-18"
@@ -330,7 +648,12 @@
                     "enabled": true,
                     "status": "complete",
                     "text": "Who is considered the father of psychoanalysis?",
-                    "answers": ["Carl Jung", "B.F. Skinner", "Sigmund Freud", "Ivan Pavlov"],
+                    "answers": [
+                        "Carl Jung",
+                        "B.F. Skinner",
+                        "Sigmund Freud",
+                        "Ivan Pavlov"
+                    ],
                     "correctIndex": 2,
                     "media": {
                         "image": null,
@@ -338,7 +661,10 @@
                         "video": null
                     },
                     "requiredMedia": {
-                        "image": { "needed": false, "description": null }
+                        "image": {
+                            "needed": false,
+                            "description": null
+                        }
                     },
                     "storyProgression": "Your understanding of the human mind illuminates the darkness!",
                     "progressionImage": null,
@@ -350,7 +676,12 @@
                     "enabled": true,
                     "status": "complete",
                     "text": "What does CBT stand for in psychotherapy?",
-                    "answers": ["Cognitive Behavioral Therapy", "Clinical Brain Treatment", "Comprehensive Behavioral Training", "Counseling Based Techniques"],
+                    "answers": [
+                        "Cognitive Behavioral Therapy",
+                        "Clinical Brain Treatment",
+                        "Comprehensive Behavioral Training",
+                        "Counseling Based Techniques"
+                    ],
                     "correctIndex": 0,
                     "media": {
                         "image": null,
@@ -358,7 +689,10 @@
                         "video": null
                     },
                     "requiredMedia": {
-                        "image": { "needed": false, "description": null }
+                        "image": {
+                            "needed": false,
+                            "description": null
+                        }
                     },
                     "storyProgression": "Your therapeutic wisdom brings healing to the realm!",
                     "progressionImage": null,
@@ -370,7 +704,12 @@
                     "enabled": true,
                     "status": "complete",
                     "text": "Which neurotransmitter is often called the 'feel-good' chemical?",
-                    "answers": ["Adrenaline", "Dopamine", "Cortisol", "Acetylcholine"],
+                    "answers": [
+                        "Adrenaline",
+                        "Dopamine",
+                        "Cortisol",
+                        "Acetylcholine"
+                    ],
                     "correctIndex": 1,
                     "media": {
                         "image": null,
@@ -378,7 +717,10 @@
                         "video": null
                     },
                     "requiredMedia": {
-                        "image": { "needed": false, "description": null }
+                        "image": {
+                            "needed": false,
+                            "description": null
+                        }
                     },
                     "storyProgression": "The ancient healers recognize your knowledge of the mind!",
                     "progressionImage": null,
@@ -397,7 +739,12 @@
                     "enabled": true,
                     "status": "complete",
                     "text": "In what year did the Kansas City Royals win their first World Series?",
-                    "answers": ["1980", "1983", "1985", "1988"],
+                    "answers": [
+                        "1980",
+                        "1983",
+                        "1985",
+                        "1988"
+                    ],
                     "correctIndex": 2,
                     "media": {
                         "image": null,
@@ -405,7 +752,10 @@
                         "video": null
                     },
                     "requiredMedia": {
-                        "image": { "needed": false, "description": null }
+                        "image": {
+                            "needed": false,
+                            "description": null
+                        }
                     },
                     "storyProgression": "The spirit of George Brett salutes your Royals knowledge!",
                     "progressionImage": null,
@@ -417,7 +767,12 @@
                     "enabled": true,
                     "status": "complete",
                     "text": "How many innings are in a standard professional baseball game?",
-                    "answers": ["7", "8", "9", "10"],
+                    "answers": [
+                        "7",
+                        "8",
+                        "9",
+                        "10"
+                    ],
                     "correctIndex": 2,
                     "media": {
                         "image": null,
@@ -425,7 +780,10 @@
                         "video": null
                     },
                     "requiredMedia": {
-                        "image": { "needed": false, "description": null }
+                        "image": {
+                            "needed": false,
+                            "description": null
+                        }
                     },
                     "storyProgression": "A home run of knowledge! The crowd goes wild!",
                     "progressionImage": null,
@@ -437,7 +795,12 @@
                     "enabled": true,
                     "status": "complete",
                     "text": "Who holds the record for most career home runs in MLB history?",
-                    "answers": ["Babe Ruth", "Hank Aaron", "Barry Bonds", "Willie Mays"],
+                    "answers": [
+                        "Babe Ruth",
+                        "Hank Aaron",
+                        "Barry Bonds",
+                        "Willie Mays"
+                    ],
                     "correctIndex": 2,
                     "media": {
                         "image": null,
@@ -445,7 +808,10 @@
                         "video": null
                     },
                     "requiredMedia": {
-                        "image": { "needed": false, "description": null }
+                        "image": {
+                            "needed": false,
+                            "description": null
+                        }
                     },
                     "storyProgression": "Your baseball expertise is Hall of Fame worthy!",
                     "progressionImage": null,
@@ -464,7 +830,12 @@
                     "enabled": true,
                     "status": "complete",
                     "text": "What is the technique called when you cook food briefly in boiling water, then plunge it into ice water?",
-                    "answers": ["Braising", "Blanching", "Sautéing", "Poaching"],
+                    "answers": [
+                        "Braising",
+                        "Blanching",
+                        "Sautéing",
+                        "Poaching"
+                    ],
                     "correctIndex": 1,
                     "media": {
                         "image": null,
@@ -472,7 +843,10 @@
                         "video": null
                     },
                     "requiredMedia": {
-                        "image": { "needed": false, "description": null }
+                        "image": {
+                            "needed": false,
+                            "description": null
+                        }
                     },
                     "storyProgression": "The culinary spirits are impressed by your kitchen knowledge!",
                     "progressionImage": null,
@@ -484,7 +858,12 @@
                     "enabled": true,
                     "status": "complete",
                     "text": "What is the primary ingredient in a traditional roux?",
-                    "answers": ["Butter and flour", "Eggs and cream", "Oil and cornstarch", "Milk and cheese"],
+                    "answers": [
+                        "Butter and flour",
+                        "Eggs and cream",
+                        "Oil and cornstarch",
+                        "Milk and cheese"
+                    ],
                     "correctIndex": 0,
                     "media": {
                         "image": null,
@@ -492,9 +871,68 @@
                         "video": null
                     },
                     "requiredMedia": {
-                        "image": { "needed": false, "description": null }
+                        "image": {
+                            "needed": false,
+                            "description": null
+                        }
                     },
                     "storyProgression": "Master Chef skills unlocked! The feast will be legendary!",
+                    "progressionImage": null,
+                    "author": "AI",
+                    "dateCreated": "2026-01-18"
+                },
+                {
+                    "id": "cooking_03",
+                    "enabled": true,
+                    "status": "complete",
+                    "text": "What temperature (Fahrenheit) is considered 'room temperature' for baking ingredients?",
+                    "answers": [
+                        "55-60°F",
+                        "65-70°F",
+                        "75-80°F",
+                        "85-90°F"
+                    ],
+                    "correctIndex": 1,
+                    "media": {
+                        "image": null,
+                        "audio": null,
+                        "video": null
+                    },
+                    "requiredMedia": {
+                        "image": {
+                            "needed": false,
+                            "description": null
+                        }
+                    },
+                    "storyProgression": "The perfect temperature for perfect wisdom!",
+                    "progressionImage": null,
+                    "author": "AI",
+                    "dateCreated": "2026-01-18"
+                },
+                {
+                    "id": "cooking_04",
+                    "enabled": true,
+                    "status": "complete",
+                    "text": "What does 'mise en place' mean in cooking?",
+                    "answers": [
+                        "Presentation style",
+                        "Everything in its place",
+                        "Quick cooking",
+                        "Slow simmer"
+                    ],
+                    "correctIndex": 1,
+                    "media": {
+                        "image": null,
+                        "audio": null,
+                        "video": null
+                    },
+                    "requiredMedia": {
+                        "image": {
+                            "needed": false,
+                            "description": null
+                        }
+                    },
+                    "storyProgression": "Organization is the key to culinary excellence! And trivia mastery!",
                     "progressionImage": null,
                     "author": "AI",
                     "dateCreated": "2026-01-18"
