@@ -1225,3 +1225,16 @@ body::after {
     }
 }
 
+
+/* Category Mascot */
+.category-mascot {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--gold-accent);
+    vertical-align: middle;
+    margin-right: 10px;
+    box-shadow: 0 0 5px var(--gold-accent);
+}
+

@@ -308,10 +308,8 @@ const game = {
             // Ensure valid index and we have a story for this act
             if (questionIndex >= 0 && questionIndex < total - 1 && index < progressionStories.length) {
 
-                // Pick a random line from the 3 available for this act
-                const storyBaseIndex = index * 3;
-                const randomOffset = Math.floor(Math.random() * 3);
-                const finalStoryIndex = Math.min(storyBaseIndex + randomOffset, progressionStories.length - 1);
+                // One story segment per act now
+                const finalStoryIndex = index;
 
                 // Store text AND image
                 gameState.storyBetweenQuestions[questionIndex] = {
@@ -500,8 +498,33 @@ const game = {
 
         // Show category
         const categoryDisplay = document.getElementById('question-category');
+        // Category Mascots Mapping
+        const categoryMascotMap = {
+            "Math": "synth_sage",
+            "Science": "synth_sage",
+            "Cats": "whiskers_mcfluff",
+            "Geography": "whiskers_mcfluff",
+            "Musicals": "melody_rose",
+            "80s Music": "melody_rose",
+            "Baseball": "blaze_ryder",
+            "Movies": "blaze_ryder",
+            "Psychiatry": "harmony_valor",
+            "Cooking": "harmony_valor"
+        };
+
         if (categoryDisplay) {
-            categoryDisplay.textContent = `${question.categoryIcon} ${question.category}`;
+            const mascotId = categoryMascotMap[question.category];
+            let mascotHtml = '';
+
+            if (mascotId) {
+                // Find character config
+                const charConfig = gameState.config.characters.find(c => c.id === mascotId);
+                if (charConfig) {
+                    mascotHtml = `<img src="${charConfig.imagePath}" class="category-mascot" alt="${charConfig.name}">`;
+                }
+            }
+
+            categoryDisplay.innerHTML = `${mascotHtml} ${question.categoryIcon} ${question.category}`;
         }
 
         // Handle media
@@ -704,26 +727,51 @@ const game = {
      * Show story progression after correct answer
      * @param {Object} question - The question with story progression
      */
-    showStoryProgression(question) {
-        const progressionImage = document.getElementById('progression-image');
-        const progressionText = document.getElementById('progression-text');
+    showStoryProgression(data) {
+        const modal = document.getElementById('story-modal');
+        const modalText = document.getElementById('story-progression-text');
+        const modalImage = document.getElementById('progression-image');
 
-        if (question.progressionImage) {
-            progressionImage.src = question.progressionImage;
-            progressionImage.classList.remove('hidden');
+        // Show text
+        modalText.textContent = data.storyProgression;
+
+        // Show image if available
+        if (data.progressionImage) {
+            modalImage.src = data.progressionImage;
+            modalImage.classList.remove('hidden');
+
+            // Dynamic Background: Match the story image
+            document.body.style.backgroundImage = `url('${data.progressionImage}')`;
+            document.body.style.backgroundSize = 'cover';
+            document.body.style.backgroundPosition = 'center';
+            document.body.style.transition = 'background-image 1s ease-in-out';
+
+            // Dynamic Music: Switch track based on Act index
+            // We need to know which Act this is. 
+            // We can infer it from the image filename or by passing the index.
+            // Simplified approach: Cycle through tracks based on currentQuestionIndex
+            const trackIndex = Math.floor(gameState.currentQuestionIndex / (gameState.totalQuestions / 10)) % 8;
+            game.audioManager.playTrack(trackIndex);
+
         } else {
-            progressionImage.classList.add('hidden');
+            modalImage.classList.add('hidden');
         }
 
-        progressionText.textContent = question.storyProgression;
-        this.showScreen('story-progression');
+        modal.classList.add('active');
+
+        // Play sound effect
+        this.audioManager.playSound('correct');
     },
 
     /**
      * Continue after viewing story progression
      */
     continueAfterStory() {
-        this.advanceQuestion();
+        if (gameState.isReplay) {
+            this.nextReplaySlide();
+        } else {
+            this.advanceQuestion();
+        }
     },
 
     /**
@@ -774,6 +822,80 @@ const game = {
 
         this.updateProgressBar(); // Show 100%
         this.showScreen('victory-screen');
+    },
+
+    /**
+     * Start Story Replay Mode
+     */
+    startStoryReplay() {
+        gameState.isReplay = true;
+        gameState.replayIndex = 0;
+        gameState.replayPlaylist = [];
+
+        // 1. Intro
+        gameState.replayPlaylist.push({
+            storyProgression: storySegments.intro.join(' '),
+            progressionImage: "assets/story/intro.png"
+        });
+
+        // 2. Acts 1-9
+        // Re-create the mapping used in assignStorySegments
+        const actImages = [
+            "assets/story/The Neon Gateway.png",
+            "assets/story/The Forest of Whispers.png",
+            "assets/story/The Forgotten Library.png",
+            "assets/story/The Echoing Caverns.png",
+            "assets/story/The Crystal Bridge.png",
+            "assets/story/The Tower of Riddles.png",
+            "assets/story/The Shadow Citadel.png",
+            "assets/story/The Inner Sanctum.png",
+            "assets/story/The Final Truth.png"
+        ];
+
+        // We need 1 story segment per act. In game it picks random. Here we pick first.
+        // storySegments.progression has 3 lines per act * 9 acts = 27 lines.
+        // We want the text for each act.
+        // Actually, let's just use the first line of each Act block for simplicity
+        // or join the 3 lines? The game picks ONE line.
+        // Let's pick the first line of each Act group (index 0, 3, 6...)
+
+        for (let i = 0; i < 9; i++) {
+            const textIndex = i * 3;
+            // Join the 3 lines for full context? Or just the first?
+            // User wanted "Replay Story", maybe full text is better?
+            // But game only shows one line.
+            // Let's show the first line to be safe/consistent.
+            // Or join them. Let's join them for a "Full Story" feel.
+            const actText = storySegments.progression.slice(textIndex, textIndex + 1).join(' ');
+
+            gameState.replayPlaylist.push({
+                storyProgression: actText,
+                progressionImage: actImages[i]
+            });
+        }
+
+        // 3. Victory
+        gameState.replayPlaylist.push({
+            storyProgression: storySegments.victory.join(' '),
+            progressionImage: "assets/story/Victory Screen.png"
+        });
+
+        // Start
+        this.showStoryProgression(gameState.replayPlaylist[0]);
+    },
+
+    /**
+     * Advance Replay
+     */
+    nextReplaySlide() {
+        gameState.replayIndex++;
+        if (gameState.replayIndex < gameState.replayPlaylist.length) {
+            this.showStoryProgression(gameState.replayPlaylist[gameState.replayIndex]);
+        } else {
+            // End of replay
+            gameState.isReplay = false;
+            this.showVictory();
+        }
     },
 
     /**
