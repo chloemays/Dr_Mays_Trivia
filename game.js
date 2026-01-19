@@ -37,20 +37,40 @@ const storySegments = {
         "One who can channel the power of Doctor Mays to vanquish the darkness.",
         "That hero is YOU."
     ],
-    act1: [
-        "You enter the Forgotten Library, its halls echoing with lost knowledge.",
-        "The tomes whisper secrets waiting to be rediscovered.",
-        "Your wisdom grows stronger with each truth you speak."
-    ],
-    act2: [
-        "The Echoing Caverns stretch before you, crystals pulsing with forgotten power.",
-        "Ancient riddles carved into the walls test your resolve.",
-        "The shadows retreat as your knowledge illuminates the path."
-    ],
-    act3: [
-        "The Shadow Citadel looms above, crackling with dark energy.",
-        "This is the final confrontation. The fate of Trivia hangs in the balance.",
-        "Only your wisdom can dispel the Shadow of Ignorance forever."
+    progression: [
+        // Act 1 - The Forgotten Library (10%+)
+        "You step through the ancient gates of the Forgotten Library.",
+        "Dust motes dance in beams of neon light filtering through stained glass.",
+        "The great librarian's ghost appears, nodding in approval.",
+        "Ancient tomes float from their shelves, drawn to your growing wisdom.",
+        "The first seal on the Shadow's prison begins to crack.",
+
+        // Act 2 - The Echoing Caverns (30%+)
+        "You descend into the Echoing Caverns, crystals humming with power.",
+        "The walls themselves seem to test you, riddles carved in luminescent stone.",
+        "Shadows scatter as your knowledge shines bright.",
+        "The cavern creatures bow before your intellectual might.",
+        "Deep below, you feel the Shadow of Ignorance trembling.",
+
+        // Act 3 - The Crystal Bridge (50%+)
+        "A bridge of pure light forms before you, spanning an impossible chasm.",
+        "Each step resonates with the truths you've spoken.",
+        "The realm between knowledge and ignorance opens before you.",
+        "Doctor Mays' spirit walks beside you, guiding your path.",
+        "The Shadow Citadel comes into view on the distant horizon.",
+
+        // Act 4 - The Shadow Citadel (70%+)
+        "You stand before the Shadow Citadel, its dark towers crackling with energy.",
+        "The gates recognize your wisdom and slowly creak open.",
+        "Inside, shadows whisper lies, but you see through their deceptions.",
+        "The throne room awaits. The final confrontation draws near.",
+        "The Shadow of Ignorance knows its end approaches.",
+
+        // Climax (90%+)
+        "You confront the Shadow of Ignorance in its sanctum.",
+        "It throws riddles and confusion, but your mind remains clear.",
+        "Light radiates from you, pushing back millennia of darkness.",
+        "Victory is within reach. One final truth remains."
     ],
     victory: [
         "The Shadow of Ignorance shatters into a thousand fading wisps!",
@@ -177,8 +197,8 @@ const game = {
         const container = document.getElementById('question-count-options');
         const totalAvailable = this.getTotalAvailableQuestions();
 
-        // Offer options: 5, 10, 15, 20, 25, 30 or max available
-        const options = [5, 10, 15, 20, 25, 30].filter(n => n <= totalAvailable);
+        // Offer options: 10, 15, 20, 25, 30 or max available (minimum 10)
+        const options = [10, 15, 20, 25, 30].filter(n => n <= totalAvailable);
         if (totalAvailable > 0 && !options.includes(totalAvailable)) {
             options.push(totalAvailable);
         }
@@ -225,25 +245,44 @@ const game = {
 
     /**
      * Assign story segments to appear between questions
+     * Story appears approximately every 3-4 questions for immersive experience
      */
     assignStorySegments() {
         gameState.storyBetweenQuestions = [];
         const total = gameState.totalQuestions;
+        const progressionStories = storySegments.progression;
 
-        // Distribute story segments throughout the game
-        const act1Point = Math.floor(total * 0.25);
-        const act2Point = Math.floor(total * 0.50);
-        const act3Point = Math.floor(total * 0.75);
+        // Calculate how many story segments to show (roughly every 3 questions)
+        const storyInterval = 3;
+        let storyIndex = 0;
 
-        // Assign story at key points
-        if (act1Point > 0) {
-            gameState.storyBetweenQuestions[act1Point - 1] = storySegments.act1[0];
-        }
-        if (act2Point > 0) {
-            gameState.storyBetweenQuestions[act2Point - 1] = storySegments.act2[0];
-        }
-        if (act3Point > 0) {
-            gameState.storyBetweenQuestions[act3Point - 1] = storySegments.act3[0];
+        for (let i = 0; i < total; i++) {
+            // Show story after every 3rd question (starting after question 2)
+            if ((i + 1) % storyInterval === 0 && i < total - 1) {
+                // Pick story based on progress through the game
+                const progressPercent = (i + 1) / total;
+
+                if (progressPercent < 0.3) {
+                    // Act 1 stories (0-30%)
+                    storyIndex = Math.floor(progressPercent * 10) % 5;
+                } else if (progressPercent < 0.5) {
+                    // Act 2 stories (30-50%)
+                    storyIndex = 5 + Math.floor((progressPercent - 0.3) * 10) % 5;
+                } else if (progressPercent < 0.7) {
+                    // Act 3 stories (50-70%)
+                    storyIndex = 10 + Math.floor((progressPercent - 0.5) * 10) % 5;
+                } else if (progressPercent < 0.9) {
+                    // Act 4 stories (70-90%)
+                    storyIndex = 15 + Math.floor((progressPercent - 0.7) * 10) % 5;
+                } else {
+                    // Climax stories (90%+)
+                    storyIndex = 20 + Math.floor((progressPercent - 0.9) * 10) % 4;
+                }
+
+                // Ensure we don't exceed array bounds
+                storyIndex = Math.min(storyIndex, progressionStories.length - 1);
+                gameState.storyBetweenQuestions[i] = progressionStories[storyIndex];
+            }
         }
     },
 
